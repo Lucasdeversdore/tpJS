@@ -1,3 +1,4 @@
 const CONFIG = {
-    championsUrl: "./data/champion.json" // Mets ici le chemin réel de ton fichier
+    championsUrl: "./data/champion.json",
+    itemsUrl: "./data/item.json"
 };
