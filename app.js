@@ -47,29 +47,19 @@ function afficherItems(items) {
 
     Object.values(items).forEach(item => {
         // console.log(item.maps);
-        if (item.maps[11] === false || item.gold.total === 0 || item.maps[21] === false || item.tags.includes('Consumable') || item.consumed === true) {
-            // pass
-        }
-        // if (item.consumed === true || item.maps[11] === false || item.gold.total === 0 || item.maps[21] === false) {
-        //     // pass
-        // }
-        else {
-            const div = document.createElement("div");
-            div.className = "item";
-
-            // Création de l'image de l'item
-            const img = document.createElement("img");
-            img.src = `https://ddragon.leagueoflegends.com/cdn/15.5.1/img/item/${item.image.full}`;
-            img.alt = item.name;
-            
-            // Nom + titre du champion
-            const nom = document.createElement("h2");
-            nom.textContent = item.gold.total;
-
-            // Ajout à la liste
-            div.appendChild(img);
-            div.appendChild(nom);
-            list.appendChild(div);
-        }
+        const div = document.createElement("div");
+        div.className = "item";
+        // Création de l'image de l'item
+        const img = document.createElement("img");
+        img.src = `https://ddragon.leagueoflegends.com/cdn/15.5.1/img/item/${item.image}`;
+        img.alt = item.name;
+        
+        // Nom + titre du champion
+        const nom = document.createElement("h2");
+        nom.textContent = item.gold.total;
+        // Ajout à la liste
+        div.appendChild(img);
+        div.appendChild(nom);
+        list.appendChild(div);
     });
 }

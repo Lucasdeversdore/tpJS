@@ -1,4 +1,4 @@
 const CONFIG = {
     championsUrl: "./data/champion.json",
-    itemsUrl: "./data/item.json"
+    itemsUrl: "./data/items_simplified.json"
 };
