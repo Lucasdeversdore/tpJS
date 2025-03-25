@@ -1,0 +1,3531 @@
+{
+    "Aatrox": {
+        "id": "Aatrox",
+        "name": "Aatrox",
+        "title": "Épée des Darkin",
+        "image": "Aatrox.png",
+        "tags": [
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 650,
+            "mp": 0,
+            "armor": 38,
+            "spellblock": 32,
+            "attackdamage": 60,
+            "attackspeed": 0.651,
+            "attackrange": 175,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Ahri": {
+        "id": "Ahri",
+        "name": "Ahri",
+        "title": "Renard à neuf queues",
+        "image": "Ahri.png",
+        "tags": [
+            "Mage",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 590,
+            "mp": 418,
+            "armor": 21,
+            "spellblock": 30,
+            "attackdamage": 53,
+            "attackspeed": 0.668,
+            "attackrange": 550,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Akali": {
+        "id": "Akali",
+        "name": "Akali",
+        "title": "Assassin rebelle",
+        "image": "Akali.png",
+        "tags": [
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 600,
+            "mp": 200,
+            "armor": 23,
+            "spellblock": 37,
+            "attackdamage": 62,
+            "attackspeed": 0.625,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Akshan": {
+        "id": "Akshan",
+        "name": "Akshan",
+        "title": "Sentinelle rebelle",
+        "image": "Akshan.png",
+        "tags": [
+            "Marksman",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 350,
+            "armor": 26,
+            "spellblock": 30,
+            "attackdamage": 52,
+            "attackspeed": 0.638,
+            "attackrange": 500,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Alistar": {
+        "id": "Alistar",
+        "name": "Alistar",
+        "title": "Minotaure",
+        "image": "Alistar.png",
+        "tags": [
+            "Tank",
+            "Support"
+        ],
+        "stats": {
+            "hp": 685,
+            "mp": 350,
+            "armor": 47,
+            "spellblock": 32,
+            "attackdamage": 62,
+            "attackspeed": 0.625,
+            "attackrange": 125,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Ambessa": {
+        "id": "Ambessa",
+        "name": "Ambessa",
+        "title": "Matriarche de guerre",
+        "image": "Ambessa.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 200,
+            "armor": 35,
+            "spellblock": 32,
+            "attackdamage": 63,
+            "attackspeed": 0.625,
+            "attackrange": 125,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Amumu": {
+        "id": "Amumu",
+        "name": "Amumu",
+        "title": "Momie mélancolique",
+        "image": "Amumu.png",
+        "tags": [
+            "Tank",
+            "Support"
+        ],
+        "stats": {
+            "hp": 685,
+            "mp": 285,
+            "armor": 33,
+            "spellblock": 32,
+            "attackdamage": 57,
+            "attackspeed": 0.736,
+            "attackrange": 125,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Anivia": {
+        "id": "Anivia",
+        "name": "Anivia",
+        "title": "Cryophénix",
+        "image": "Anivia.png",
+        "tags": [
+            "Mage"
+        ],
+        "stats": {
+            "hp": 550,
+            "mp": 495,
+            "armor": 21,
+            "spellblock": 30,
+            "attackdamage": 51,
+            "attackspeed": 0.658,
+            "attackrange": 600,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Annie": {
+        "id": "Annie",
+        "name": "Annie",
+        "title": "Enfant des ténèbres",
+        "image": "Annie.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 560,
+            "mp": 418,
+            "armor": 19,
+            "spellblock": 30,
+            "attackdamage": 50,
+            "attackspeed": 0.61,
+            "attackrange": 625,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Aphelios": {
+        "id": "Aphelios",
+        "name": "Aphelios",
+        "title": "Arme des Lunaris",
+        "image": "Aphelios.png",
+        "tags": [
+            "Marksman"
+        ],
+        "stats": {
+            "hp": 600,
+            "mp": 348,
+            "armor": 26,
+            "spellblock": 30,
+            "attackdamage": 55,
+            "attackspeed": 0.64,
+            "attackrange": 550,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Ashe": {
+        "id": "Ashe",
+        "name": "Ashe",
+        "title": "Archère de givre",
+        "image": "Ashe.png",
+        "tags": [
+            "Marksman",
+            "Support"
+        ],
+        "stats": {
+            "hp": 610,
+            "mp": 280,
+            "armor": 26,
+            "spellblock": 30,
+            "attackdamage": 59,
+            "attackspeed": 0.658,
+            "attackrange": 600,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "AurelionSol": {
+        "id": "AurelionSol",
+        "name": "Aurelion Sol",
+        "title": "Forgeur d'étoiles",
+        "image": "AurelionSol.png",
+        "tags": [
+            "Mage"
+        ],
+        "stats": {
+            "hp": 600,
+            "mp": 530,
+            "armor": 22,
+            "spellblock": 30,
+            "attackdamage": 58,
+            "attackspeed": 0.625,
+            "attackrange": 550,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Aurora": {
+        "id": "Aurora",
+        "name": "Aurora",
+        "title": "Sorcière d'entre les mondes",
+        "image": "Aurora.png",
+        "tags": [
+            "Mage",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 607,
+            "mp": 475,
+            "armor": 23,
+            "spellblock": 30,
+            "attackdamage": 53,
+            "attackspeed": 0.668,
+            "attackrange": 550,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Azir": {
+        "id": "Azir",
+        "name": "Azir",
+        "title": "Empereur des sables",
+        "image": "Azir.png",
+        "tags": [
+            "Mage",
+            "Marksman"
+        ],
+        "stats": {
+            "hp": 550,
+            "mp": 320,
+            "armor": 25,
+            "spellblock": 30,
+            "attackdamage": 56,
+            "attackspeed": 0.625,
+            "attackrange": 525,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Bard": {
+        "id": "Bard",
+        "name": "Bard",
+        "title": "Gardien errant",
+        "image": "Bard.png",
+        "tags": [
+            "Support",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 350,
+            "armor": 34,
+            "spellblock": 30,
+            "attackdamage": 52,
+            "attackspeed": 0.658,
+            "attackrange": 500,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Belveth": {
+        "id": "Belveth",
+        "name": "Bel'Veth",
+        "title": "Impératrice du Néant",
+        "image": "Belveth.png",
+        "tags": [
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 610,
+            "mp": 60,
+            "armor": 32,
+            "spellblock": 32,
+            "attackdamage": 60,
+            "attackspeed": 0.85,
+            "attackrange": 150,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Blitzcrank": {
+        "id": "Blitzcrank",
+        "name": "Blitzcrank",
+        "title": "Golem de vapeur",
+        "image": "Blitzcrank.png",
+        "tags": [
+            "Tank",
+            "Support"
+        ],
+        "stats": {
+            "hp": 600,
+            "mp": 267,
+            "armor": 37,
+            "spellblock": 32,
+            "attackdamage": 62,
+            "attackspeed": 0.625,
+            "attackrange": 125,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Brand": {
+        "id": "Brand",
+        "name": "Brand",
+        "title": "Vengeur flamboyant",
+        "image": "Brand.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 570,
+            "mp": 469,
+            "armor": 27,
+            "spellblock": 30,
+            "attackdamage": 57,
+            "attackspeed": 0.681,
+            "attackrange": 550,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Braum": {
+        "id": "Braum",
+        "name": "Braum",
+        "title": "Cœur de Freljord",
+        "image": "Braum.png",
+        "tags": [
+            "Tank",
+            "Support"
+        ],
+        "stats": {
+            "hp": 610,
+            "mp": 311,
+            "armor": 47,
+            "spellblock": 32,
+            "attackdamage": 55,
+            "attackspeed": 0.644,
+            "attackrange": 125,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Briar": {
+        "id": "Briar",
+        "name": "Briar",
+        "title": "Faim insatiable",
+        "image": "Briar.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 625,
+            "mp": 0,
+            "armor": 30,
+            "spellblock": 32,
+            "attackdamage": 60,
+            "attackspeed": 0.644,
+            "attackrange": 125,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Caitlyn": {
+        "id": "Caitlyn",
+        "name": "Caitlyn",
+        "title": "Shérif de Piltover",
+        "image": "Caitlyn.png",
+        "tags": [
+            "Marksman"
+        ],
+        "stats": {
+            "hp": 580,
+            "mp": 315,
+            "armor": 27,
+            "spellblock": 30,
+            "attackdamage": 60,
+            "attackspeed": 0.681,
+            "attackrange": 650,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Camille": {
+        "id": "Camille",
+        "name": "Camille",
+        "title": "Ombre d'acier",
+        "image": "Camille.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 650,
+            "mp": 339,
+            "armor": 35,
+            "spellblock": 32,
+            "attackdamage": 68,
+            "attackspeed": 0.644,
+            "attackrange": 125,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Cassiopeia": {
+        "id": "Cassiopeia",
+        "name": "Cassiopeia",
+        "title": "Étreinte du serpent",
+        "image": "Cassiopeia.png",
+        "tags": [
+            "Mage"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 400,
+            "armor": 18,
+            "spellblock": 32,
+            "attackdamage": 53,
+            "attackspeed": 0.647,
+            "attackrange": 550,
+            "movespeed": 328,
+            "crit": 0
+        }
+    },
+    "Chogath": {
+        "id": "Chogath",
+        "name": "Cho'Gath",
+        "title": "Terreur noire",
+        "image": "Chogath.png",
+        "tags": [
+            "Tank",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 644,
+            "mp": 270,
+            "armor": 38,
+            "spellblock": 32,
+            "attackdamage": 69,
+            "attackspeed": 0.625,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Corki": {
+        "id": "Corki",
+        "name": "Corki",
+        "title": "Artilleur téméraire",
+        "image": "Corki.png",
+        "tags": [
+            "Marksman",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 610,
+            "mp": 350,
+            "armor": 30,
+            "spellblock": 30,
+            "attackdamage": 52,
+            "attackspeed": 0.644,
+            "attackrange": 550,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Darius": {
+        "id": "Darius",
+        "name": "Darius",
+        "title": "Main de Noxus",
+        "image": "Darius.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 652,
+            "mp": 263,
+            "armor": 39,
+            "spellblock": 32,
+            "attackdamage": 64,
+            "attackspeed": 0.625,
+            "attackrange": 175,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Diana": {
+        "id": "Diana",
+        "name": "Diana",
+        "title": "Mépris de la lune",
+        "image": "Diana.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 640,
+            "mp": 375,
+            "armor": 31,
+            "spellblock": 32,
+            "attackdamage": 57,
+            "attackspeed": 0.625,
+            "attackrange": 150,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Draven": {
+        "id": "Draven",
+        "name": "Draven",
+        "title": "Glorieux exécuteur",
+        "image": "Draven.png",
+        "tags": [
+            "Marksman"
+        ],
+        "stats": {
+            "hp": 675,
+            "mp": 361,
+            "armor": 29,
+            "spellblock": 30,
+            "attackdamage": 62,
+            "attackspeed": 0.679,
+            "attackrange": 550,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "DrMundo": {
+        "id": "DrMundo",
+        "name": "Dr. Mundo",
+        "title": "Dément de Zaun",
+        "image": "DrMundo.png",
+        "tags": [
+            "Tank",
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 640,
+            "mp": 0,
+            "armor": 32,
+            "spellblock": 29,
+            "attackdamage": 61,
+            "attackspeed": 0.67,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Ekko": {
+        "id": "Ekko",
+        "name": "Ekko",
+        "title": "Fractureur du temps",
+        "image": "Ekko.png",
+        "tags": [
+            "Assassin",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 655,
+            "mp": 280,
+            "armor": 32,
+            "spellblock": 32,
+            "attackdamage": 58,
+            "attackspeed": 0.688,
+            "attackrange": 125,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Elise": {
+        "id": "Elise",
+        "name": "Elise",
+        "title": "Reine araignée",
+        "image": "Elise.png",
+        "tags": [
+            "Assassin",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 620,
+            "mp": 324,
+            "armor": 30,
+            "spellblock": 30,
+            "attackdamage": 55,
+            "attackspeed": 0.625,
+            "attackrange": 550,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Evelynn": {
+        "id": "Evelynn",
+        "name": "Evelynn",
+        "title": "Démon sadique",
+        "image": "Evelynn.png",
+        "tags": [
+            "Assassin",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 642,
+            "mp": 315,
+            "armor": 37,
+            "spellblock": 32,
+            "attackdamage": 61,
+            "attackspeed": 0.667,
+            "attackrange": 125,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Ezreal": {
+        "id": "Ezreal",
+        "name": "Ezreal",
+        "title": "Explorateur prodigue",
+        "image": "Ezreal.png",
+        "tags": [
+            "Marksman",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 600,
+            "mp": 375,
+            "armor": 24,
+            "spellblock": 30,
+            "attackdamage": 60,
+            "attackspeed": 0.625,
+            "attackrange": 550,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Fiddlesticks": {
+        "id": "Fiddlesticks",
+        "name": "Fiddlesticks",
+        "title": "Effroi nocturne",
+        "image": "Fiddlesticks.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 650,
+            "mp": 500,
+            "armor": 34,
+            "spellblock": 30,
+            "attackdamage": 55,
+            "attackspeed": 0.625,
+            "attackrange": 480,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Fiora": {
+        "id": "Fiora",
+        "name": "Fiora",
+        "title": "Sublime bretteuse",
+        "image": "Fiora.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 620,
+            "mp": 300,
+            "armor": 33,
+            "spellblock": 32,
+            "attackdamage": 66,
+            "attackspeed": 0.69,
+            "attackrange": 150,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Fizz": {
+        "id": "Fizz",
+        "name": "Fizz",
+        "title": "Filou des mers",
+        "image": "Fizz.png",
+        "tags": [
+            "Assassin",
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 640,
+            "mp": 317,
+            "armor": 22,
+            "spellblock": 32,
+            "attackdamage": 58,
+            "attackspeed": 0.658,
+            "attackrange": 175,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Galio": {
+        "id": "Galio",
+        "name": "Galio",
+        "title": "Colosse",
+        "image": "Galio.png",
+        "tags": [
+            "Tank",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 600,
+            "mp": 410,
+            "armor": 24,
+            "spellblock": 32,
+            "attackdamage": 59,
+            "attackspeed": 0.625,
+            "attackrange": 150,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Gangplank": {
+        "id": "Gangplank",
+        "name": "Gangplank",
+        "title": "Fléau des mers",
+        "image": "Gangplank.png",
+        "tags": [
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 280,
+            "armor": 31,
+            "spellblock": 32,
+            "attackdamage": 64,
+            "attackspeed": 0.658,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Garen": {
+        "id": "Garen",
+        "name": "Garen",
+        "title": "Force de Demacia",
+        "image": "Garen.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 690,
+            "mp": 0,
+            "armor": 38,
+            "spellblock": 32,
+            "attackdamage": 69,
+            "attackspeed": 0.625,
+            "attackrange": 175,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Gnar": {
+        "id": "Gnar",
+        "name": "Gnar",
+        "title": "Chaînon manquant",
+        "image": "Gnar.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 540,
+            "mp": 100,
+            "armor": 32,
+            "spellblock": 30,
+            "attackdamage": 60,
+            "attackspeed": 0.625,
+            "attackrange": 175,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Gragas": {
+        "id": "Gragas",
+        "name": "Gragas",
+        "title": "Agitateur",
+        "image": "Gragas.png",
+        "tags": [
+            "Fighter",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 640,
+            "mp": 400,
+            "armor": 38,
+            "spellblock": 32,
+            "attackdamage": 64,
+            "attackspeed": 0.675,
+            "attackrange": 125,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Graves": {
+        "id": "Graves",
+        "name": "Graves",
+        "title": "Hors-la-loi",
+        "image": "Graves.png",
+        "tags": [
+            "Marksman"
+        ],
+        "stats": {
+            "hp": 625,
+            "mp": 325,
+            "armor": 33,
+            "spellblock": 32,
+            "attackdamage": 68,
+            "attackspeed": 0.475,
+            "attackrange": 425,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Gwen": {
+        "id": "Gwen",
+        "name": "Gwen",
+        "title": "Couturière sacrée",
+        "image": "Gwen.png",
+        "tags": [
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 620,
+            "mp": 330,
+            "armor": 39,
+            "spellblock": 32,
+            "attackdamage": 63,
+            "attackspeed": 0.69,
+            "attackrange": 150,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Hecarim": {
+        "id": "Hecarim",
+        "name": "Hecarim",
+        "title": "Ombre de la guerre",
+        "image": "Hecarim.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 625,
+            "mp": 280,
+            "armor": 32,
+            "spellblock": 32,
+            "attackdamage": 66,
+            "attackspeed": 0.67,
+            "attackrange": 175,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Heimerdinger": {
+        "id": "Heimerdinger",
+        "name": "Heimerdinger",
+        "title": "Inventeur réputé",
+        "image": "Heimerdinger.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 558,
+            "mp": 385,
+            "armor": 19,
+            "spellblock": 30,
+            "attackdamage": 56,
+            "attackspeed": 0.658,
+            "attackrange": 550,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Hwei": {
+        "id": "Hwei",
+        "name": "Hwei",
+        "title": "Visionnaire",
+        "image": "Hwei.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 580,
+            "mp": 480,
+            "armor": 21,
+            "spellblock": 30,
+            "attackdamage": 54,
+            "attackspeed": 0.69,
+            "attackrange": 550,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Illaoi": {
+        "id": "Illaoi",
+        "name": "Illaoi",
+        "title": "Prêtresse du kraken",
+        "image": "Illaoi.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 656,
+            "mp": 350,
+            "armor": 35,
+            "spellblock": 32,
+            "attackdamage": 65,
+            "attackspeed": 0.625,
+            "attackrange": 125,
+            "movespeed": 350,
+            "crit": 0
+        }
+    },
+    "Irelia": {
+        "id": "Irelia",
+        "name": "Irelia",
+        "title": "Danseuse des lames",
+        "image": "Irelia.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 350,
+            "armor": 36,
+            "spellblock": 30,
+            "attackdamage": 65,
+            "attackspeed": 0.656,
+            "attackrange": 200,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Ivern": {
+        "id": "Ivern",
+        "name": "Ivern",
+        "title": "Aîné de la forêt",
+        "image": "Ivern.png",
+        "tags": [
+            "Support",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 450,
+            "armor": 27,
+            "spellblock": 30,
+            "attackdamage": 50,
+            "attackspeed": 0.644,
+            "attackrange": 475,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Janna": {
+        "id": "Janna",
+        "name": "Janna",
+        "title": "Avatar de l'air",
+        "image": "Janna.png",
+        "tags": [
+            "Support",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 570,
+            "mp": 360,
+            "armor": 28,
+            "spellblock": 30,
+            "attackdamage": 47,
+            "attackspeed": 0.625,
+            "attackrange": 550,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "JarvanIV": {
+        "id": "JarvanIV",
+        "name": "Jarvan IV",
+        "title": "Exemple demacien",
+        "image": "JarvanIV.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 640,
+            "mp": 300,
+            "armor": 36,
+            "spellblock": 32,
+            "attackdamage": 64,
+            "attackspeed": 0.658,
+            "attackrange": 175,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Jax": {
+        "id": "Jax",
+        "name": "Jax",
+        "title": "Maître d'armes",
+        "image": "Jax.png",
+        "tags": [
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 665,
+            "mp": 339,
+            "armor": 36,
+            "spellblock": 32,
+            "attackdamage": 68,
+            "attackspeed": 0.638,
+            "attackrange": 125,
+            "movespeed": 350,
+            "crit": 0
+        }
+    },
+    "Jayce": {
+        "id": "Jayce",
+        "name": "Jayce",
+        "title": "Protecteur du futur",
+        "image": "Jayce.png",
+        "tags": [
+            "Marksman",
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 590,
+            "mp": 375,
+            "armor": 22,
+            "spellblock": 30,
+            "attackdamage": 59,
+            "attackspeed": 0.658,
+            "attackrange": 125,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Jhin": {
+        "id": "Jhin",
+        "name": "Jhin",
+        "title": "Virtuose",
+        "image": "Jhin.png",
+        "tags": [
+            "Marksman",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 655,
+            "mp": 300,
+            "armor": 24,
+            "spellblock": 30,
+            "attackdamage": 59,
+            "attackspeed": 0.625,
+            "attackrange": 550,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Jinx": {
+        "id": "Jinx",
+        "name": "Jinx",
+        "title": "Gâchette folle",
+        "image": "Jinx.png",
+        "tags": [
+            "Marksman"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 260,
+            "armor": 26,
+            "spellblock": 30,
+            "attackdamage": 59,
+            "attackspeed": 0.625,
+            "attackrange": 525,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Kaisa": {
+        "id": "Kaisa",
+        "name": "Kai'Sa",
+        "title": "Fille du Néant",
+        "image": "Kaisa.png",
+        "tags": [
+            "Marksman",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 640,
+            "mp": 345,
+            "armor": 25,
+            "spellblock": 30,
+            "attackdamage": 59,
+            "attackspeed": 0.644,
+            "attackrange": 525,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Kalista": {
+        "id": "Kalista",
+        "name": "Kalista",
+        "title": "Lance de la vengeance",
+        "image": "Kalista.png",
+        "tags": [
+            "Marksman"
+        ],
+        "stats": {
+            "hp": 600,
+            "mp": 300,
+            "armor": 24,
+            "spellblock": 30,
+            "attackdamage": 59,
+            "attackspeed": 0.694,
+            "attackrange": 525,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Karma": {
+        "id": "Karma",
+        "name": "Karma",
+        "title": "Sagesse incarnée",
+        "image": "Karma.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 374,
+            "armor": 28,
+            "spellblock": 30,
+            "attackdamage": 51,
+            "attackspeed": 0.625,
+            "attackrange": 525,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Karthus": {
+        "id": "Karthus",
+        "name": "Karthus",
+        "title": "Liche",
+        "image": "Karthus.png",
+        "tags": [
+            "Mage"
+        ],
+        "stats": {
+            "hp": 620,
+            "mp": 467,
+            "armor": 21,
+            "spellblock": 30,
+            "attackdamage": 46,
+            "attackspeed": 0.625,
+            "attackrange": 450,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Kassadin": {
+        "id": "Kassadin",
+        "name": "Kassadin",
+        "title": "Chasseur du Néant",
+        "image": "Kassadin.png",
+        "tags": [
+            "Assassin",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 646,
+            "mp": 400,
+            "armor": 19,
+            "spellblock": 30,
+            "attackdamage": 59,
+            "attackspeed": 0.64,
+            "attackrange": 150,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Katarina": {
+        "id": "Katarina",
+        "name": "Katarina",
+        "title": "Lame sinistre",
+        "image": "Katarina.png",
+        "tags": [
+            "Assassin",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 672,
+            "mp": 0,
+            "armor": 28,
+            "spellblock": 32,
+            "attackdamage": 58,
+            "attackspeed": 0.658,
+            "attackrange": 125,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Kayle": {
+        "id": "Kayle",
+        "name": "Kayle",
+        "title": "Vertueuse",
+        "image": "Kayle.png",
+        "tags": [
+            "Mage",
+            "Marksman"
+        ],
+        "stats": {
+            "hp": 670,
+            "mp": 330,
+            "armor": 26,
+            "spellblock": 22,
+            "attackdamage": 50,
+            "attackspeed": 0.625,
+            "attackrange": 175,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Kayn": {
+        "id": "Kayn",
+        "name": "Kayn",
+        "title": "Faucheur de l'ombre",
+        "image": "Kayn.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 655,
+            "mp": 410,
+            "armor": 38,
+            "spellblock": 32,
+            "attackdamage": 68,
+            "attackspeed": 0.669,
+            "attackrange": 175,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Kennen": {
+        "id": "Kennen",
+        "name": "Kennen",
+        "title": "Cœur de la tempête",
+        "image": "Kennen.png",
+        "tags": [
+            "Mage"
+        ],
+        "stats": {
+            "hp": 580,
+            "mp": 200,
+            "armor": 29,
+            "spellblock": 30,
+            "attackdamage": 48,
+            "attackspeed": 0.625,
+            "attackrange": 550,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Khazix": {
+        "id": "Khazix",
+        "name": "Kha'Zix",
+        "title": "Faucheur du Néant",
+        "image": "Khazix.png",
+        "tags": [
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 643,
+            "mp": 327,
+            "armor": 32,
+            "spellblock": 32,
+            "attackdamage": 60,
+            "attackspeed": 0.668,
+            "attackrange": 125,
+            "movespeed": 350,
+            "crit": 0
+        }
+    },
+    "Kindred": {
+        "id": "Kindred",
+        "name": "Kindred",
+        "title": "Chasseurs éternels",
+        "image": "Kindred.png",
+        "tags": [
+            "Marksman"
+        ],
+        "stats": {
+            "hp": 595,
+            "mp": 300,
+            "armor": 29,
+            "spellblock": 30,
+            "attackdamage": 65,
+            "attackspeed": 0.625,
+            "attackrange": 500,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Kled": {
+        "id": "Kled",
+        "name": "Kled",
+        "title": "Cavalier colérique",
+        "image": "Kled.png",
+        "tags": [
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 410,
+            "mp": 100,
+            "armor": 35,
+            "spellblock": 28,
+            "attackdamage": 65,
+            "attackspeed": 0.625,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "KogMaw": {
+        "id": "KogMaw",
+        "name": "Kog'Maw",
+        "title": "Gueule des abysses",
+        "image": "KogMaw.png",
+        "tags": [
+            "Marksman",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 635,
+            "mp": 325,
+            "armor": 24,
+            "spellblock": 30,
+            "attackdamage": 61,
+            "attackspeed": 0.665,
+            "attackrange": 500,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "KSante": {
+        "id": "KSante",
+        "name": "K'Santé",
+        "title": "Fierté de Nazumah",
+        "image": "KSante.png",
+        "tags": [
+            "Tank",
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 625,
+            "mp": 320,
+            "armor": 36,
+            "spellblock": 30,
+            "attackdamage": 64,
+            "attackspeed": 0.688,
+            "attackrange": 150,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Leblanc": {
+        "id": "Leblanc",
+        "name": "LeBlanc",
+        "title": "Manipulatrice",
+        "image": "Leblanc.png",
+        "tags": [
+            "Assassin",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 598,
+            "mp": 400,
+            "armor": 22,
+            "spellblock": 30,
+            "attackdamage": 55,
+            "attackspeed": 0.658,
+            "attackrange": 525,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "LeeSin": {
+        "id": "LeeSin",
+        "name": "Lee Sin",
+        "title": "Moine aveugle",
+        "image": "LeeSin.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 645,
+            "mp": 200,
+            "armor": 36,
+            "spellblock": 32,
+            "attackdamage": 69,
+            "attackspeed": 0.651,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Leona": {
+        "id": "Leona",
+        "name": "Leona",
+        "title": "Aube radieuse",
+        "image": "Leona.png",
+        "tags": [
+            "Tank",
+            "Support"
+        ],
+        "stats": {
+            "hp": 646,
+            "mp": 302,
+            "armor": 43,
+            "spellblock": 32,
+            "attackdamage": 60,
+            "attackspeed": 0.625,
+            "attackrange": 125,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Lillia": {
+        "id": "Lillia",
+        "name": "Lillia",
+        "title": "Fleur timide",
+        "image": "Lillia.png",
+        "tags": [
+            "Fighter",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 605,
+            "mp": 410,
+            "armor": 22,
+            "spellblock": 32,
+            "attackdamage": 61,
+            "attackspeed": 0.625,
+            "attackrange": 325,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Lissandra": {
+        "id": "Lissandra",
+        "name": "Lissandra",
+        "title": "Sorcière de glace",
+        "image": "Lissandra.png",
+        "tags": [
+            "Mage"
+        ],
+        "stats": {
+            "hp": 620,
+            "mp": 475,
+            "armor": 22,
+            "spellblock": 30,
+            "attackdamage": 55,
+            "attackspeed": 0.656,
+            "attackrange": 550,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Lucian": {
+        "id": "Lucian",
+        "name": "Lucian",
+        "title": "Purificateur",
+        "image": "Lucian.png",
+        "tags": [
+            "Marksman",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 641,
+            "mp": 320,
+            "armor": 28,
+            "spellblock": 30,
+            "attackdamage": 60,
+            "attackspeed": 0.638,
+            "attackrange": 500,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Lulu": {
+        "id": "Lulu",
+        "name": "Lulu",
+        "title": "Sorcière féérique",
+        "image": "Lulu.png",
+        "tags": [
+            "Support",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 595,
+            "mp": 350,
+            "armor": 26,
+            "spellblock": 30,
+            "attackdamage": 47,
+            "attackspeed": 0.625,
+            "attackrange": 550,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Lux": {
+        "id": "Lux",
+        "name": "Lux",
+        "title": "Dame de lumière",
+        "image": "Lux.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 580,
+            "mp": 480,
+            "armor": 21,
+            "spellblock": 30,
+            "attackdamage": 54,
+            "attackspeed": 0.669,
+            "attackrange": 550,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Malphite": {
+        "id": "Malphite",
+        "name": "Malphite",
+        "title": "Éclat du monolithe",
+        "image": "Malphite.png",
+        "tags": [
+            "Tank",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 665,
+            "mp": 280,
+            "armor": 37,
+            "spellblock": 28,
+            "attackdamage": 62,
+            "attackspeed": 0.736,
+            "attackrange": 125,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Malzahar": {
+        "id": "Malzahar",
+        "name": "Malzahar",
+        "title": "Prophète du Néant",
+        "image": "Malzahar.png",
+        "tags": [
+            "Mage"
+        ],
+        "stats": {
+            "hp": 580,
+            "mp": 375,
+            "armor": 18,
+            "spellblock": 30,
+            "attackdamage": 55,
+            "attackspeed": 0.625,
+            "attackrange": 500,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Maokai": {
+        "id": "Maokai",
+        "name": "Maokai",
+        "title": "Tréant torturé",
+        "image": "Maokai.png",
+        "tags": [
+            "Tank",
+            "Support"
+        ],
+        "stats": {
+            "hp": 665,
+            "mp": 375,
+            "armor": 35,
+            "spellblock": 32,
+            "attackdamage": 64,
+            "attackspeed": 0.8,
+            "attackrange": 125,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "MasterYi": {
+        "id": "MasterYi",
+        "name": "Maître Yi",
+        "title": "Fine lame Wuju",
+        "image": "MasterYi.png",
+        "tags": [
+            "Assassin",
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 669,
+            "mp": 251,
+            "armor": 33,
+            "spellblock": 32,
+            "attackdamage": 65,
+            "attackspeed": 0.679,
+            "attackrange": 175,
+            "movespeed": 355,
+            "crit": 0
+        }
+    },
+    "Mel": {
+        "id": "Mel",
+        "name": "Mel",
+        "title": "Reflet de l'âme",
+        "image": "Mel.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 600,
+            "mp": 480,
+            "armor": 21,
+            "spellblock": 30,
+            "attackdamage": 54,
+            "attackspeed": 0.625,
+            "attackrange": 550,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Milio": {
+        "id": "Milio",
+        "name": "Milio",
+        "title": "Douce flamme",
+        "image": "Milio.png",
+        "tags": [
+            "Support",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 560,
+            "mp": 365,
+            "armor": 26,
+            "spellblock": 30,
+            "attackdamage": 48,
+            "attackspeed": 0.625,
+            "attackrange": 525,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "MissFortune": {
+        "id": "MissFortune",
+        "name": "Miss Fortune",
+        "title": "Chasseuse de primes",
+        "image": "MissFortune.png",
+        "tags": [
+            "Marksman",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 640,
+            "mp": 300,
+            "armor": 25,
+            "spellblock": 30,
+            "attackdamage": 53,
+            "attackspeed": 0.656,
+            "attackrange": 550,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "MonkeyKing": {
+        "id": "MonkeyKing",
+        "name": "Wukong",
+        "title": "Roi des singes",
+        "image": "MonkeyKing.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 610,
+            "mp": 330,
+            "armor": 31,
+            "spellblock": 28,
+            "attackdamage": 66,
+            "attackspeed": 0.69,
+            "attackrange": 175,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Mordekaiser": {
+        "id": "Mordekaiser",
+        "name": "Mordekaiser",
+        "title": "Revenant de fer",
+        "image": "Mordekaiser.png",
+        "tags": [
+            "Fighter",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 645,
+            "mp": 100,
+            "armor": 37,
+            "spellblock": 32,
+            "attackdamage": 61,
+            "attackspeed": 0.625,
+            "attackrange": 175,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Morgana": {
+        "id": "Morgana",
+        "name": "Morgana",
+        "title": "Déchue",
+        "image": "Morgana.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 340,
+            "armor": 25,
+            "spellblock": 30,
+            "attackdamage": 56,
+            "attackspeed": 0.625,
+            "attackrange": 450,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Naafiri": {
+        "id": "Naafiri",
+        "name": "Naafiri",
+        "title": "la meute de fer",
+        "image": "Naafiri.png",
+        "tags": [
+            "Assassin",
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 635,
+            "mp": 400,
+            "armor": 30,
+            "spellblock": 32,
+            "attackdamage": 55,
+            "attackspeed": 0.663,
+            "attackrange": 125,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Nami": {
+        "id": "Nami",
+        "name": "Nami",
+        "title": "Aquamancienne",
+        "image": "Nami.png",
+        "tags": [
+            "Support",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 560,
+            "mp": 365,
+            "armor": 29,
+            "spellblock": 30,
+            "attackdamage": 54,
+            "attackspeed": 0.644,
+            "attackrange": 550,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Nasus": {
+        "id": "Nasus",
+        "name": "Nasus",
+        "title": "Gardien des sables",
+        "image": "Nasus.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 631,
+            "mp": 326,
+            "armor": 34,
+            "spellblock": 32,
+            "attackdamage": 67,
+            "attackspeed": 0.638,
+            "attackrange": 125,
+            "movespeed": 350,
+            "crit": 0
+        }
+    },
+    "Nautilus": {
+        "id": "Nautilus",
+        "name": "Nautilus",
+        "title": "Titan des profondeurs",
+        "image": "Nautilus.png",
+        "tags": [
+            "Tank",
+            "Support"
+        ],
+        "stats": {
+            "hp": 646,
+            "mp": 400,
+            "armor": 39,
+            "spellblock": 32,
+            "attackdamage": 61,
+            "attackspeed": 0.706,
+            "attackrange": 175,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Neeko": {
+        "id": "Neeko",
+        "name": "Neeko",
+        "title": "Caméléon curieux",
+        "image": "Neeko.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 610,
+            "mp": 450,
+            "armor": 21,
+            "spellblock": 30,
+            "attackdamage": 48,
+            "attackspeed": 0.625,
+            "attackrange": 550,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Nidalee": {
+        "id": "Nidalee",
+        "name": "Nidalee",
+        "title": "Chasseresse bestiale",
+        "image": "Nidalee.png",
+        "tags": [
+            "Assassin",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 610,
+            "mp": 295,
+            "armor": 32,
+            "spellblock": 30,
+            "attackdamage": 58,
+            "attackspeed": 0.638,
+            "attackrange": 525,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Nilah": {
+        "id": "Nilah",
+        "name": "Nilah",
+        "title": "Joie incarnée",
+        "image": "Nilah.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 570,
+            "mp": 350,
+            "armor": 27,
+            "spellblock": 32,
+            "attackdamage": 58,
+            "attackspeed": 0.697,
+            "attackrange": 225,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Nocturne": {
+        "id": "Nocturne",
+        "name": "Nocturne",
+        "title": "Éternel cauchemar",
+        "image": "Nocturne.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 655,
+            "mp": 275,
+            "armor": 38,
+            "spellblock": 32,
+            "attackdamage": 62,
+            "attackspeed": 0.721,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Nunu": {
+        "id": "Nunu",
+        "name": "Nunu et Willump",
+        "title": "Le Garçon et son yéti",
+        "image": "Nunu.png",
+        "tags": [
+            "Tank",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 610,
+            "mp": 280,
+            "armor": 29,
+            "spellblock": 32,
+            "attackdamage": 61,
+            "attackspeed": 0.625,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Olaf": {
+        "id": "Olaf",
+        "name": "Olaf",
+        "title": "Berzerker",
+        "image": "Olaf.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 645,
+            "mp": 316,
+            "armor": 35,
+            "spellblock": 32,
+            "attackdamage": 68,
+            "attackspeed": 0.694,
+            "attackrange": 125,
+            "movespeed": 350,
+            "crit": 0
+        }
+    },
+    "Orianna": {
+        "id": "Orianna",
+        "name": "Orianna",
+        "title": "Demoiselle mécanique",
+        "image": "Orianna.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 585,
+            "mp": 418,
+            "armor": 20,
+            "spellblock": 26,
+            "attackdamage": 44,
+            "attackspeed": 0.658,
+            "attackrange": 525,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Ornn": {
+        "id": "Ornn",
+        "name": "Ornn",
+        "title": "Dieu de la forge volcanique",
+        "image": "Ornn.png",
+        "tags": [
+            "Tank"
+        ],
+        "stats": {
+            "hp": 660,
+            "mp": 341,
+            "armor": 33,
+            "spellblock": 32,
+            "attackdamage": 69,
+            "attackspeed": 0.625,
+            "attackrange": 175,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Pantheon": {
+        "id": "Pantheon",
+        "name": "Pantheon",
+        "title": "Lance éternelle",
+        "image": "Pantheon.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 650,
+            "mp": 317,
+            "armor": 40,
+            "spellblock": 28,
+            "attackdamage": 64,
+            "attackspeed": 0.658,
+            "attackrange": 175,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Poppy": {
+        "id": "Poppy",
+        "name": "Poppy",
+        "title": "Gardienne du marteau",
+        "image": "Poppy.png",
+        "tags": [
+            "Tank",
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 610,
+            "mp": 280,
+            "armor": 35,
+            "spellblock": 32,
+            "attackdamage": 60,
+            "attackspeed": 0.658,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Pyke": {
+        "id": "Pyke",
+        "name": "Pyke",
+        "title": "Éventreur des abysses",
+        "image": "Pyke.png",
+        "tags": [
+            "Support",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 670,
+            "mp": 415,
+            "armor": 43,
+            "spellblock": 32,
+            "attackdamage": 62,
+            "attackspeed": 0.667,
+            "attackrange": 150,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Qiyana": {
+        "id": "Qiyana",
+        "name": "Qiyana",
+        "title": "Impératrice des éléments",
+        "image": "Qiyana.png",
+        "tags": [
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 590,
+            "mp": 375,
+            "armor": 31,
+            "spellblock": 32,
+            "attackdamage": 66,
+            "attackspeed": 0.688,
+            "attackrange": 150,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Quinn": {
+        "id": "Quinn",
+        "name": "Quinn",
+        "title": "Ailes de Demacia",
+        "image": "Quinn.png",
+        "tags": [
+            "Marksman",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 565,
+            "mp": 269,
+            "armor": 28,
+            "spellblock": 30,
+            "attackdamage": 59,
+            "attackspeed": 0.668,
+            "attackrange": 525,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Rakan": {
+        "id": "Rakan",
+        "name": "Rakan",
+        "title": "Charmeur",
+        "image": "Rakan.png",
+        "tags": [
+            "Support"
+        ],
+        "stats": {
+            "hp": 610,
+            "mp": 315,
+            "armor": 30,
+            "spellblock": 32,
+            "attackdamage": 62,
+            "attackspeed": 0.635,
+            "attackrange": 300,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Rammus": {
+        "id": "Rammus",
+        "name": "Rammus",
+        "title": "Tatou blindé",
+        "image": "Rammus.png",
+        "tags": [
+            "Tank"
+        ],
+        "stats": {
+            "hp": 675,
+            "mp": 310,
+            "armor": 40,
+            "spellblock": 32,
+            "attackdamage": 55,
+            "attackspeed": 0.656,
+            "attackrange": 125,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "RekSai": {
+        "id": "RekSai",
+        "name": "Rek'Sai",
+        "title": "Traqueuse du Néant",
+        "image": "RekSai.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 600,
+            "mp": 100,
+            "armor": 36,
+            "spellblock": 32,
+            "attackdamage": 58,
+            "attackspeed": 0.667,
+            "attackrange": 175,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Rell": {
+        "id": "Rell",
+        "name": "Rell",
+        "title": "Vierge de fer",
+        "image": "Rell.png",
+        "tags": [
+            "Tank",
+            "Support"
+        ],
+        "stats": {
+            "hp": 620,
+            "mp": 320,
+            "armor": 30,
+            "spellblock": 28,
+            "attackdamage": 55,
+            "attackspeed": 0.625,
+            "attackrange": 175,
+            "movespeed": 315,
+            "crit": 0
+        }
+    },
+    "Renata": {
+        "id": "Renata",
+        "name": "Renata Glasc",
+        "title": "Baronne de la chimie",
+        "image": "Renata.png",
+        "tags": [
+            "Support",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 545,
+            "mp": 350,
+            "armor": 27,
+            "spellblock": 30,
+            "attackdamage": 49,
+            "attackspeed": 0.625,
+            "attackrange": 550,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Renekton": {
+        "id": "Renekton",
+        "name": "Renekton",
+        "title": "Dévoreur des sables",
+        "image": "Renekton.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 660,
+            "mp": 100,
+            "armor": 35,
+            "spellblock": 28,
+            "attackdamage": 69,
+            "attackspeed": 0.665,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Rengar": {
+        "id": "Rengar",
+        "name": "Rengar",
+        "title": "Fier traqueur",
+        "image": "Rengar.png",
+        "tags": [
+            "Assassin",
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 590,
+            "mp": 4,
+            "armor": 34,
+            "spellblock": 32,
+            "attackdamage": 68,
+            "attackspeed": 0.667,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Riven": {
+        "id": "Riven",
+        "name": "Riven",
+        "title": "Exilée brisée",
+        "image": "Riven.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 0,
+            "armor": 33,
+            "spellblock": 32,
+            "attackdamage": 64,
+            "attackspeed": 0.625,
+            "attackrange": 125,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Rumble": {
+        "id": "Rumble",
+        "name": "Rumble",
+        "title": "Menace mécanisée",
+        "image": "Rumble.png",
+        "tags": [
+            "Fighter",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 655,
+            "mp": 150,
+            "armor": 36,
+            "spellblock": 28,
+            "attackdamage": 64,
+            "attackspeed": 0.644,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Ryze": {
+        "id": "Ryze",
+        "name": "Ryze",
+        "title": "Mage runique",
+        "image": "Ryze.png",
+        "tags": [
+            "Mage"
+        ],
+        "stats": {
+            "hp": 645,
+            "mp": 300,
+            "armor": 22,
+            "spellblock": 32,
+            "attackdamage": 58,
+            "attackspeed": 0.658,
+            "attackrange": 550,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Samira": {
+        "id": "Samira",
+        "name": "Samira",
+        "title": "Rose du désert",
+        "image": "Samira.png",
+        "tags": [
+            "Marksman",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 349,
+            "armor": 26,
+            "spellblock": 30,
+            "attackdamage": 57,
+            "attackspeed": 0.658,
+            "attackrange": 500,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Sejuani": {
+        "id": "Sejuani",
+        "name": "Sejuani",
+        "title": "Fureur du nord",
+        "image": "Sejuani.png",
+        "tags": [
+            "Tank"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 400,
+            "armor": 34,
+            "spellblock": 32,
+            "attackdamage": 66,
+            "attackspeed": 0.688,
+            "attackrange": 150,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Senna": {
+        "id": "Senna",
+        "name": "Senna",
+        "title": "Rédemptrice",
+        "image": "Senna.png",
+        "tags": [
+            "Support",
+            "Marksman"
+        ],
+        "stats": {
+            "hp": 530,
+            "mp": 350,
+            "armor": 25,
+            "spellblock": 30,
+            "attackdamage": 50,
+            "attackspeed": 0.625,
+            "attackrange": 600,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Seraphine": {
+        "id": "Seraphine",
+        "name": "Séraphine",
+        "title": "Chanteuse rêveuse",
+        "image": "Seraphine.png",
+        "tags": [
+            "Support",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 570,
+            "mp": 360,
+            "armor": 26,
+            "spellblock": 30,
+            "attackdamage": 50,
+            "attackspeed": 0.669,
+            "attackrange": 525,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Sett": {
+        "id": "Sett",
+        "name": "Sett",
+        "title": "Patron",
+        "image": "Sett.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 670,
+            "mp": 0,
+            "armor": 33,
+            "spellblock": 28,
+            "attackdamage": 60,
+            "attackspeed": 0.625,
+            "attackrange": 125,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Shaco": {
+        "id": "Shaco",
+        "name": "Shaco",
+        "title": "Bouffon des ténèbres",
+        "image": "Shaco.png",
+        "tags": [
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 297,
+            "armor": 30,
+            "spellblock": 32,
+            "attackdamage": 63,
+            "attackspeed": 0.694,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Shen": {
+        "id": "Shen",
+        "name": "Shen",
+        "title": "Œil du crépuscule",
+        "image": "Shen.png",
+        "tags": [
+            "Tank"
+        ],
+        "stats": {
+            "hp": 610,
+            "mp": 400,
+            "armor": 34,
+            "spellblock": 32,
+            "attackdamage": 64,
+            "attackspeed": 0.751,
+            "attackrange": 125,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Shyvana": {
+        "id": "Shyvana",
+        "name": "Shyvana",
+        "title": "Demi-dragon",
+        "image": "Shyvana.png",
+        "tags": [
+            "Fighter",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 665,
+            "mp": 100,
+            "armor": 38,
+            "spellblock": 32,
+            "attackdamage": 66,
+            "attackspeed": 0.658,
+            "attackrange": 125,
+            "movespeed": 350,
+            "crit": 0
+        }
+    },
+    "Singed": {
+        "id": "Singed",
+        "name": "Singed",
+        "title": "Chimiste fou",
+        "image": "Singed.png",
+        "tags": [
+            "Tank",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 650,
+            "mp": 330,
+            "armor": 34,
+            "spellblock": 32,
+            "attackdamage": 63,
+            "attackspeed": 0.625,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Sion": {
+        "id": "Sion",
+        "name": "Sion",
+        "title": "Colosse mort-vivant",
+        "image": "Sion.png",
+        "tags": [
+            "Tank",
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 655,
+            "mp": 400,
+            "armor": 36,
+            "spellblock": 32,
+            "attackdamage": 68,
+            "attackspeed": 0.679,
+            "attackrange": 175,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Sivir": {
+        "id": "Sivir",
+        "name": "Sivir",
+        "title": "Vierge martiale",
+        "image": "Sivir.png",
+        "tags": [
+            "Marksman"
+        ],
+        "stats": {
+            "hp": 600,
+            "mp": 340,
+            "armor": 30,
+            "spellblock": 30,
+            "attackdamage": 60,
+            "attackspeed": 0.625,
+            "attackrange": 500,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Skarner": {
+        "id": "Skarner",
+        "name": "Skarner",
+        "title": "Souverain originel",
+        "image": "Skarner.png",
+        "tags": [
+            "Tank",
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 320,
+            "armor": 33,
+            "spellblock": 32,
+            "attackdamage": 63,
+            "attackspeed": 0.625,
+            "attackrange": 150,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Smolder": {
+        "id": "Smolder",
+        "name": "Smolder",
+        "title": "Dragonnet flamboyant",
+        "image": "Smolder.png",
+        "tags": [
+            "Marksman",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 575,
+            "mp": 300,
+            "armor": 26,
+            "spellblock": 30,
+            "attackdamage": 60,
+            "attackspeed": 0.638,
+            "attackrange": 550,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Sona": {
+        "id": "Sona",
+        "name": "Sona",
+        "title": "Virtuose de la harpe",
+        "image": "Sona.png",
+        "tags": [
+            "Support",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 550,
+            "mp": 340,
+            "armor": 26,
+            "spellblock": 30,
+            "attackdamage": 49,
+            "attackspeed": 0.644,
+            "attackrange": 550,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Soraka": {
+        "id": "Soraka",
+        "name": "Soraka",
+        "title": "Enfant des étoiles",
+        "image": "Soraka.png",
+        "tags": [
+            "Support",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 605,
+            "mp": 425,
+            "armor": 32,
+            "spellblock": 30,
+            "attackdamage": 50,
+            "attackspeed": 0.625,
+            "attackrange": 550,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Swain": {
+        "id": "Swain",
+        "name": "Swain",
+        "title": "Grand général noxien",
+        "image": "Swain.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 595,
+            "mp": 400,
+            "armor": 25,
+            "spellblock": 31,
+            "attackdamage": 58,
+            "attackspeed": 0.625,
+            "attackrange": 525,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Sylas": {
+        "id": "Sylas",
+        "name": "Sylas",
+        "title": "Révolutionnaire déchaîné",
+        "image": "Sylas.png",
+        "tags": [
+            "Mage",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 600,
+            "mp": 400,
+            "armor": 29,
+            "spellblock": 32,
+            "attackdamage": 61,
+            "attackspeed": 0.645,
+            "attackrange": 175,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Syndra": {
+        "id": "Syndra",
+        "name": "Syndra",
+        "title": "Souveraine obscure",
+        "image": "Syndra.png",
+        "tags": [
+            "Mage"
+        ],
+        "stats": {
+            "hp": 563,
+            "mp": 480,
+            "armor": 25,
+            "spellblock": 30,
+            "attackdamage": 54,
+            "attackspeed": 0.658,
+            "attackrange": 550,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "TahmKench": {
+        "id": "TahmKench",
+        "name": "Tahm Kench",
+        "title": "Roi des rivières",
+        "image": "TahmKench.png",
+        "tags": [
+            "Tank",
+            "Support"
+        ],
+        "stats": {
+            "hp": 640,
+            "mp": 325,
+            "armor": 39,
+            "spellblock": 32,
+            "attackdamage": 56,
+            "attackspeed": 0.658,
+            "attackrange": 175,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Taliyah": {
+        "id": "Taliyah",
+        "name": "Taliyah",
+        "title": "Tisseuse de pierres",
+        "image": "Taliyah.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 550,
+            "mp": 470,
+            "armor": 18,
+            "spellblock": 30,
+            "attackdamage": 58,
+            "attackspeed": 0.658,
+            "attackrange": 525,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Talon": {
+        "id": "Talon",
+        "name": "Talon",
+        "title": "Lame des ténèbres",
+        "image": "Talon.png",
+        "tags": [
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 658,
+            "mp": 400,
+            "armor": 30,
+            "spellblock": 36,
+            "attackdamage": 68,
+            "attackspeed": 0.625,
+            "attackrange": 125,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Taric": {
+        "id": "Taric",
+        "name": "Taric",
+        "title": "Bouclier de Valoran",
+        "image": "Taric.png",
+        "tags": [
+            "Support",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 645,
+            "mp": 300,
+            "armor": 40,
+            "spellblock": 28,
+            "attackdamage": 55,
+            "attackspeed": 0.625,
+            "attackrange": 150,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Teemo": {
+        "id": "Teemo",
+        "name": "Teemo",
+        "title": "Éclaireur de Bandle",
+        "image": "Teemo.png",
+        "tags": [
+            "Marksman",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 615,
+            "mp": 334,
+            "armor": 24,
+            "spellblock": 30,
+            "attackdamage": 54,
+            "attackspeed": 0.69,
+            "attackrange": 500,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Thresh": {
+        "id": "Thresh",
+        "name": "Thresh",
+        "title": "Garde aux chaînes",
+        "image": "Thresh.png",
+        "tags": [
+            "Support",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 620,
+            "mp": 274,
+            "armor": 33,
+            "spellblock": 30,
+            "attackdamage": 56,
+            "attackspeed": 0.625,
+            "attackrange": 450,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Tristana": {
+        "id": "Tristana",
+        "name": "Tristana",
+        "title": "Canonnière yordle",
+        "image": "Tristana.png",
+        "tags": [
+            "Marksman",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 640,
+            "mp": 300,
+            "armor": 30,
+            "spellblock": 28,
+            "attackdamage": 60,
+            "attackspeed": 0.656,
+            "attackrange": 550,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Trundle": {
+        "id": "Trundle",
+        "name": "Trundle",
+        "title": "Roi des trolls",
+        "image": "Trundle.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 650,
+            "mp": 340,
+            "armor": 37,
+            "spellblock": 32,
+            "attackdamage": 68,
+            "attackspeed": 0.67,
+            "attackrange": 175,
+            "movespeed": 350,
+            "crit": 0
+        }
+    },
+    "Tryndamere": {
+        "id": "Tryndamere",
+        "name": "Tryndamere",
+        "title": "Roi barbare",
+        "image": "Tryndamere.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 696,
+            "mp": 100,
+            "armor": 33,
+            "spellblock": 32,
+            "attackdamage": 66,
+            "attackspeed": 0.67,
+            "attackrange": 175,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "TwistedFate": {
+        "id": "TwistedFate",
+        "name": "Twisted Fate",
+        "title": "Maître des cartes",
+        "image": "TwistedFate.png",
+        "tags": [
+            "Mage",
+            "Marksman"
+        ],
+        "stats": {
+            "hp": 604,
+            "mp": 333,
+            "armor": 21,
+            "spellblock": 30,
+            "attackdamage": 52,
+            "attackspeed": 0.625,
+            "attackrange": 525,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Twitch": {
+        "id": "Twitch",
+        "name": "Twitch",
+        "title": "Semeur de peste",
+        "image": "Twitch.png",
+        "tags": [
+            "Marksman",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 300,
+            "armor": 27,
+            "spellblock": 30,
+            "attackdamage": 59,
+            "attackspeed": 0.679,
+            "attackrange": 550,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Udyr": {
+        "id": "Udyr",
+        "name": "Udyr",
+        "title": "Gardien des esprits",
+        "image": "Udyr.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 664,
+            "mp": 271,
+            "armor": 31,
+            "spellblock": 32,
+            "attackdamage": 62,
+            "attackspeed": 0.65,
+            "attackrange": 125,
+            "movespeed": 350,
+            "crit": 0
+        }
+    },
+    "Urgot": {
+        "id": "Urgot",
+        "name": "Urgot",
+        "title": "Broyeur",
+        "image": "Urgot.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 655,
+            "mp": 340,
+            "armor": 36,
+            "spellblock": 32,
+            "attackdamage": 63,
+            "attackspeed": 0.625,
+            "attackrange": 350,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Varus": {
+        "id": "Varus",
+        "name": "Varus",
+        "title": "Flèche de la vengeance",
+        "image": "Varus.png",
+        "tags": [
+            "Marksman",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 600,
+            "mp": 320,
+            "armor": 27,
+            "spellblock": 30,
+            "attackdamage": 59,
+            "attackspeed": 0.658,
+            "attackrange": 575,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Vayne": {
+        "id": "Vayne",
+        "name": "Vayne",
+        "title": "Chasseresse nocturne",
+        "image": "Vayne.png",
+        "tags": [
+            "Marksman",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 550,
+            "mp": 232,
+            "armor": 23,
+            "spellblock": 30,
+            "attackdamage": 60,
+            "attackspeed": 0.658,
+            "attackrange": 550,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Veigar": {
+        "id": "Veigar",
+        "name": "Veigar",
+        "title": "Seigneur des maléfices",
+        "image": "Veigar.png",
+        "tags": [
+            "Mage"
+        ],
+        "stats": {
+            "hp": 580,
+            "mp": 490,
+            "armor": 18,
+            "spellblock": 32,
+            "attackdamage": 52,
+            "attackspeed": 0.625,
+            "attackrange": 550,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Velkoz": {
+        "id": "Velkoz",
+        "name": "Vel'Koz",
+        "title": "Œil du Néant",
+        "image": "Velkoz.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 590,
+            "mp": 469,
+            "armor": 22,
+            "spellblock": 30,
+            "attackdamage": 55,
+            "attackspeed": 0.643,
+            "attackrange": 525,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Vex": {
+        "id": "Vex",
+        "name": "Vex",
+        "title": "Ombre du désespoir",
+        "image": "Vex.png",
+        "tags": [
+            "Mage"
+        ],
+        "stats": {
+            "hp": 590,
+            "mp": 490,
+            "armor": 23,
+            "spellblock": 28,
+            "attackdamage": 54,
+            "attackspeed": 0.669,
+            "attackrange": 550,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Vi": {
+        "id": "Vi",
+        "name": "Vi",
+        "title": "Cogne de Piltover",
+        "image": "Vi.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 655,
+            "mp": 295,
+            "armor": 30,
+            "spellblock": 32,
+            "attackdamage": 63,
+            "attackspeed": 0.644,
+            "attackrange": 125,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Viego": {
+        "id": "Viego",
+        "name": "Viego",
+        "title": "Roi déchu",
+        "image": "Viego.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 10000,
+            "armor": 34,
+            "spellblock": 32,
+            "attackdamage": 57,
+            "attackspeed": 0.658,
+            "attackrange": 200,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Viktor": {
+        "id": "Viktor",
+        "name": "Viktor",
+        "title": "Héraut de l'arcane",
+        "image": "Viktor.png",
+        "tags": [
+            "Mage"
+        ],
+        "stats": {
+            "hp": 600,
+            "mp": 405,
+            "armor": 23,
+            "spellblock": 30,
+            "attackdamage": 53,
+            "attackspeed": 0.658,
+            "attackrange": 525,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Vladimir": {
+        "id": "Vladimir",
+        "name": "Vladimir",
+        "title": "Saigneur pourpre",
+        "image": "Vladimir.png",
+        "tags": [
+            "Mage",
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 607,
+            "mp": 2,
+            "armor": 27,
+            "spellblock": 30,
+            "attackdamage": 55,
+            "attackspeed": 0.658,
+            "attackrange": 450,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Volibear": {
+        "id": "Volibear",
+        "name": "Volibear",
+        "title": "Tempête impitoyable",
+        "image": "Volibear.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 650,
+            "mp": 350,
+            "armor": 31,
+            "spellblock": 32,
+            "attackdamage": 60,
+            "attackspeed": 0.625,
+            "attackrange": 150,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Warwick": {
+        "id": "Warwick",
+        "name": "Warwick",
+        "title": "Fureur déchaînée de Zaun",
+        "image": "Warwick.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 620,
+            "mp": 280,
+            "armor": 33,
+            "spellblock": 32,
+            "attackdamage": 60,
+            "attackspeed": 0.638,
+            "attackrange": 125,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Xayah": {
+        "id": "Xayah",
+        "name": "Xayah",
+        "title": "Rebelle",
+        "image": "Xayah.png",
+        "tags": [
+            "Marksman"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 340,
+            "armor": 25,
+            "spellblock": 30,
+            "attackdamage": 60,
+            "attackspeed": 0.658,
+            "attackrange": 525,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Xerath": {
+        "id": "Xerath",
+        "name": "Xerath",
+        "title": "Mage suprême",
+        "image": "Xerath.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 596,
+            "mp": 400,
+            "armor": 22,
+            "spellblock": 30,
+            "attackdamage": 55,
+            "attackspeed": 0.658,
+            "attackrange": 525,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "XinZhao": {
+        "id": "XinZhao",
+        "name": "Xin Zhao",
+        "title": "Sénéchal de Demacia",
+        "image": "XinZhao.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 640,
+            "mp": 274,
+            "armor": 35,
+            "spellblock": 32,
+            "attackdamage": 63,
+            "attackspeed": 0.645,
+            "attackrange": 175,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Yasuo": {
+        "id": "Yasuo",
+        "name": "Yasuo",
+        "title": "Disgracié",
+        "image": "Yasuo.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 590,
+            "mp": 100,
+            "armor": 32,
+            "spellblock": 32,
+            "attackdamage": 60,
+            "attackspeed": 0.697,
+            "attackrange": 175,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Yone": {
+        "id": "Yone",
+        "name": "Yone",
+        "title": "Inoublié",
+        "image": "Yone.png",
+        "tags": [
+            "Fighter",
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 620,
+            "mp": 500,
+            "armor": 33,
+            "spellblock": 32,
+            "attackdamage": 60,
+            "attackspeed": 0.625,
+            "attackrange": 175,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Yorick": {
+        "id": "Yorick",
+        "name": "Yorick",
+        "title": "Berger des âmes",
+        "image": "Yorick.png",
+        "tags": [
+            "Fighter",
+            "Tank"
+        ],
+        "stats": {
+            "hp": 650,
+            "mp": 300,
+            "armor": 39,
+            "spellblock": 32,
+            "attackdamage": 62,
+            "attackspeed": 0.625,
+            "attackrange": 175,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Yuumi": {
+        "id": "Yuumi",
+        "name": "Yuumi",
+        "title": "Gardienne du Grimoire",
+        "image": "Yuumi.png",
+        "tags": [
+            "Support",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 500,
+            "mp": 440,
+            "armor": 25,
+            "spellblock": 25,
+            "attackdamage": 49,
+            "attackspeed": 0.625,
+            "attackrange": 425,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Zac": {
+        "id": "Zac",
+        "name": "Zac",
+        "title": "Arme secrète",
+        "image": "Zac.png",
+        "tags": [
+            "Tank",
+            "Fighter"
+        ],
+        "stats": {
+            "hp": 685,
+            "mp": 0,
+            "armor": 33,
+            "spellblock": 32,
+            "attackdamage": 60,
+            "attackspeed": 0.736,
+            "attackrange": 175,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Zed": {
+        "id": "Zed",
+        "name": "Zed",
+        "title": "Maître des ombres",
+        "image": "Zed.png",
+        "tags": [
+            "Assassin"
+        ],
+        "stats": {
+            "hp": 654,
+            "mp": 200,
+            "armor": 32,
+            "spellblock": 29,
+            "attackdamage": 63,
+            "attackspeed": 0.651,
+            "attackrange": 125,
+            "movespeed": 345,
+            "crit": 0
+        }
+    },
+    "Zeri": {
+        "id": "Zeri",
+        "name": "Zeri",
+        "title": "Étincelle de Zaun",
+        "image": "Zeri.png",
+        "tags": [
+            "Marksman"
+        ],
+        "stats": {
+            "hp": 600,
+            "mp": 250,
+            "armor": 24,
+            "spellblock": 30,
+            "attackdamage": 56,
+            "attackspeed": 0.658,
+            "attackrange": 500,
+            "movespeed": 330,
+            "crit": 0
+        }
+    },
+    "Ziggs": {
+        "id": "Ziggs",
+        "name": "Ziggs",
+        "title": "Expert des Hexplosifs",
+        "image": "Ziggs.png",
+        "tags": [
+            "Mage"
+        ],
+        "stats": {
+            "hp": 606,
+            "mp": 480,
+            "armor": 21,
+            "spellblock": 30,
+            "attackdamage": 55,
+            "attackspeed": 0.656,
+            "attackrange": 550,
+            "movespeed": 325,
+            "crit": 0
+        }
+    },
+    "Zilean": {
+        "id": "Zilean",
+        "name": "Zilean",
+        "title": "Gardien du Temps",
+        "image": "Zilean.png",
+        "tags": [
+            "Support",
+            "Mage"
+        ],
+        "stats": {
+            "hp": 574,
+            "mp": 452,
+            "armor": 24,
+            "spellblock": 30,
+            "attackdamage": 52,
+            "attackspeed": 0.658,
+            "attackrange": 550,
+            "movespeed": 335,
+            "crit": 0
+        }
+    },
+    "Zoe": {
+        "id": "Zoe",
+        "name": "Zoé",
+        "title": "Manifestation du Crépuscule",
+        "image": "Zoe.png",
+        "tags": [
+            "Mage"
+        ],
+        "stats": {
+            "hp": 630,
+            "mp": 425,
+            "armor": 21,
+            "spellblock": 30,
+            "attackdamage": 58,
+            "attackspeed": 0.658,
+            "attackrange": 550,
+            "movespeed": 340,
+            "crit": 0
+        }
+    },
+    "Zyra": {
+        "id": "Zyra",
+        "name": "Zyra",
+        "title": "Dame aux ronces",
+        "image": "Zyra.png",
+        "tags": [
+            "Mage",
+            "Support"
+        ],
+        "stats": {
+            "hp": 574,
+            "mp": 418,
+            "armor": 29,
+            "spellblock": 30,
+            "attackdamage": 53,
+            "attackspeed": 0.681,
+            "attackrange": 575,
+            "movespeed": 340,
+            "crit": 0
+        }
+    }
+}

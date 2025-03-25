@@ -1,0 +1,46 @@
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+}
+nav a:hover {
+    background-color: #444;
+}
+
+/* Section */
+.section {
+    display: none;
+}
+
+/* Liste des champions */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.champion {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    background: #ff0000;
+    padding: 1%;
+    border-radius: 5px;
+    width: 13%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.champion h2, .champion img, .champion p {
+    width: 100%;
+}
