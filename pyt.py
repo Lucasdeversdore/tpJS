@@ -35,6 +35,7 @@ for champion_id, champion_data in data["data"].items():
         "id": champion_data["id"],
         "name": champion_data["name"],
         "title": champion_data["title"],
+        "lore": champion_data["blurb"],
         "image": champion_data["image"]["full"],
         "tags": champion_data["tags"],
         "stats": {

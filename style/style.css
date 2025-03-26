@@ -44,3 +44,8 @@ ul {
 .champion h2, .champion img, .champion p {
     width: 100%;
 }
+
+.img-champion-details {
+    max-width : 50%;
+    height : auto;
+}

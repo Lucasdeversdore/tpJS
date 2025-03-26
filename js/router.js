@@ -1,5 +1,6 @@
 import { afficherChampions } from "./champions.js";
 import { afficherItems } from "./items.js";
+import { afficherChampionDetails } from "./championDetails.js";
 
 const routes = {
     "/": afficherChampions,
@@ -8,8 +9,15 @@ const routes = {
 
 export function router() {
     const path = window.location.pathname;
-    const renderFunction = routes[path] || afficherChampions;
-    renderFunction();
+    console.log(path);
+
+    // if (path.startsWith("/champion/")) {
+    //     const championId = path.split("/").pop();
+    //     console.log(championId);
+    //     afficherChampionDetails(championId);
+    // } else {
+        (routes[path] || afficherChampions)();
+    // }
 }
 
 export function initRouter() {

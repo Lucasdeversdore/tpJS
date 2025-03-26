@@ -1,4 +1,5 @@
 import { CONFIG } from "./config.js";
+import { afficherChampionDetails } from "./championDetails.js";
 
 class Champions {
     constructor() {
@@ -40,6 +41,10 @@ class Champions {
                 <h2>${champion.name}</h2>
                 <p>${champion.title}</p>
             `;
+            div.addEventListener("click", () => {
+                history.pushState({}, "", `/champion/${champion.id}`);
+                afficherChampionDetails(champion.id);
+            });
             list.appendChild(div);
         });
     }
