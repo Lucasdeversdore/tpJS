@@ -1,13 +1,12 @@
 import { CONFIG } from "./config.js";
 import { afficherChampionDetails } from "./championDetails.js";
 
-
 class Champions {
     constructor() {
         this.championsData = [];
         this.filteredChampions = [];
         this.currentPage = 1;
-        this.itemsPerPage = 12;
+        this.itemsPerPage = 60;
     }
 
     // Fonction pour récupérer les champions
@@ -18,13 +17,13 @@ class Champions {
             this.championsData = Object.values(data); // Tous les champions
             this.filteredChampions = [...this.championsData];
             this.render();
-            this.addSearchListener();  // Ajouter le listener de recherche après le chargement des données
+            this.addSearchListener(); // Ajouter le listener de recherche après le chargement des données
         } catch (error) {
             console.error("Erreur lors du chargement des champions :", error);
         }
     }
 
-    // Fonction pour afficher la liste des champions et la pagination et la recherche
+    // Fonction pour afficher la liste des champions + pagination et recherche
     render() {
         const content = document.getElementById("content");
         content.innerHTML = `
@@ -46,8 +45,13 @@ class Champions {
         champions.forEach(champion => {
             const div = document.createElement("div");
             div.className = "champion";
+
             div.innerHTML = `
-                <img class="champion-img" data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg" alt="${champion.name}">
+                <img class="champion-img lazy" 
+                     data-id="${champion.id}" 
+                     src="https://via.placeholder.com/150x150?text=Loading" 
+                     alt="${champion.name}" 
+                     loading="lazy" />
                 <h2>${champion.name}</h2>
                 <p>${champion.title}</p>
             `;
@@ -58,30 +62,42 @@ class Champions {
             list.appendChild(div);
         });
 
-        // Le lazy loading des images
+        // Lazy loading des images sans cache
         this.lazyLoadImages();
     }
 
-    // Fonction de lazy loading pour les images
-    lazyLoadImages() {
-        const images = document.querySelectorAll('.champion-img');
+    // Fonction pour charger une image sans cache
+    async loadImage(championId) {
+        const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championId}_0.jpg`;
+        try {
+            const response = await fetch(imageUrl, { cache: "no-store" });
+            const blob = await response.blob();
+            return URL.createObjectURL(blob); // URL temporaire pour éviter le cache
+        } catch (error) {
+            console.error(`Erreur lors du chargement de l'image pour ${championId}:`, error);
+            return "https://via.placeholder.com/150x150?text=Error"; // Image de remplacement en cas d'erreur
+        }
+    }
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
+    // Fonction de lazy loading pour les images sans cache
+    lazyLoadImages() {
+        const images = document.querySelectorAll('.lazy');
+
+        const observer = new IntersectionObserver(async (entries, observer) => {
+            for (const entry of entries) {
                 if (entry.isIntersecting) {
                     const image = entry.target;
-                    image.src = image.dataset.src; // Charge l'image
-                    image.removeAttribute('data-src'); // Empeche le rechargement
-                    observer.unobserve(image); 
+                    const championId = image.dataset.id;
+                    image.src = await this.loadImage(championId);
+                    image.classList.remove('lazy'); // Évite de le recharger
+                    observer.unobserve(image);
                 }
-            });
+            }
         }, {
             rootMargin: '0px 0px 200px 0px' // Chargement des images légèrement avant qu'elles ne soient visibles
         });
 
-        images.forEach(image => {
-            observer.observe(image);
-        });
+        images.forEach(image => observer.observe(image));
     }
 
     // La pagination
@@ -97,7 +113,7 @@ class Champions {
 
         pagination.innerHTML = paginationHTML;
 
-        // Bouton pour changer de page
+        // Boutons pour changer de page
         document.getElementById("prev-page").addEventListener("click", () => {
             if (this.currentPage > 1) {
                 this.currentPage--;
@@ -107,7 +123,6 @@ class Champions {
         });
 
         document.getElementById("next-page").addEventListener("click", () => {
-            const totalPages = Math.ceil(this.filteredChampions.length / this.itemsPerPage);
             if (this.currentPage < totalPages) {
                 this.currentPage++;
                 this.renderList(this.getPaginatedData());
