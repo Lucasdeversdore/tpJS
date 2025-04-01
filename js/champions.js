@@ -1,11 +1,11 @@
-import { CONFIG } from "./config.js";
+import { CONFIG } from './config.js';
 
 class Champions {
     constructor() {
         this.championsData = []; // Toutes les données des champions
         this.filteredChampions = [];  // Liste des champions filtrés après recherche
         this.currentPage = 1;
-        this.itemsPerPage = 10;
+        this.itemsPerPage = 12;
     }
 
     // Fonction pour récupérer les champions
@@ -32,8 +32,8 @@ class Champions {
             <div id="pagination"></div>
         `;
 
-        this.renderList(this.getPaginatedData()); // Afficher la liste des champions en fonction de la page actuelle
-        this.renderPagination(); // Afficher la pagination
+        this.renderList(this.getPaginatedData());
+        this.renderPagination();
     }
 
     // Fonction pour afficher la liste des champions
@@ -45,15 +45,39 @@ class Champions {
             const div = document.createElement("div");
             div.className = "champion";
             div.innerHTML = `
-                <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg" alt="${champion.name}">
+                <img class="champion-img" data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg" alt="${champion.name}" loading="lazy">
                 <h2>${champion.name}</h2>
                 <p>${champion.title}</p>
             `;
             list.appendChild(div);
         });
+
+        // Le lazy loading
+        this.lazyLoadImages();
     }
 
-    // Fonction pour afficher la pagination
+    // Fonction de lazy loading pour les images
+    lazyLoadImages() {
+        const images = document.querySelectorAll('.champion-img');
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const image = entry.target;
+                    image.src = image.dataset.src;
+                    image.removeAttribute('data-src');
+                    observer.unobserve(image); // Ne plus observer cette image une fois qu'elle est chargée
+                }
+            });
+        }, {
+            rootMargin: '0px 0px 200px 0px' // Chargement des images légèrement avant qu'elles ne soient visibles en fonction de ou elle est vers le bas
+        });
+        images.forEach(image => {
+            observer.observe(image);
+        });
+    }
+
+    // La pagination
     renderPagination() {
         const pagination = document.getElementById("pagination");
         const totalPages = Math.ceil(this.filteredChampions.length / this.itemsPerPage);
@@ -66,23 +90,24 @@ class Champions {
 
         pagination.innerHTML = paginationHTML;
 
-        // Écouteurs pour les boutons de pagination
+        // Bouton changer de page
         document.getElementById("prev-page").addEventListener("click", () => {
             if (this.currentPage > 1) {
                 this.currentPage--;
-                this.render();  // Re-render avec la page précédente
+                this.renderList(this.getPaginatedData());
+                this.renderPagination();
             }
         });
 
         document.getElementById("next-page").addEventListener("click", () => {
+            const totalPages = Math.ceil(this.filteredChampions.length / this.itemsPerPage);
             if (this.currentPage < totalPages) {
                 this.currentPage++;
-                this.render();  // Re-render avec la page suivante
+                this.renderList(this.getPaginatedData());
+                this.renderPagination();
             }
         });
     }
-
-    // Fonction pour obtenir les champions pour la page actuelle
     getPaginatedData() {
         const startIndex = (this.currentPage - 1) * this.itemsPerPage;
         const endIndex = startIndex + this.itemsPerPage;
@@ -95,18 +120,16 @@ class Champions {
         searchInput.addEventListener("input", () => {
             const searchTerm = searchInput.value.toLowerCase();
 
-            // Filtrer les champions par nom ou titre
+            // Filtre par nom ou titre
             this.filteredChampions = this.championsData.filter(champion => 
                 champion.name.toLowerCase().includes(searchTerm) || 
                 champion.title.toLowerCase().includes(searchTerm)
             );
-
-            // Réinitialiser la page à 1 après une recherche
             this.currentPage = 1;
 
-            // Re-render avec les résultats filtrés et la pagination
+            // Affichage avec pagination+filtre
             this.renderList(this.getPaginatedData());
-            this.renderPagination(); // Re-render la pagination
+            this.renderPagination();
         });
     }
 }
