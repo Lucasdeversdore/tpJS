@@ -34,7 +34,7 @@ class Items {
 
         this.renderList(this.getPaginatedData());  // Afficher les items en fonction de la page actuelle
         this.renderPagination();  // Afficher la pagination
-        this.lazyLoadImages(); // Appliquer le lazy loading sur les images
+        this.lazyLoadImages();
     }
 
     // Fonction pour afficher la liste des items
@@ -59,10 +59,7 @@ class Items {
             list.appendChild(div);
         });
 
-        // Activer le lazy loading après le rendu
         this.lazyLoadImages();
-
-        // Ajouter un gestionnaire d'événement pour les clics sur les images
         this.addItemClickListeners();
     }
 
@@ -77,39 +74,46 @@ class Items {
         });
     }
 
-    // Fonction pour afficher les détails d'un item
-    // Fonction pour afficher les détails d'un item
     showItemDetails(itemId) {
         const item = this.itemsData.find(i => i.id == itemId);
         if (!item) return;
-
+    
         const content = document.getElementById("content");
         content.innerHTML = `
-        <button id="back-btn" style="position: absolute; top: 10px; left: 10px;">Retour</button>
-        <h1>${item.name}</h1>
-        <img src="https://ddragon.leagueoflegends.com/cdn/15.5.1/img/item/${item.image}" alt="${item.name}" />
-        <h2>Prix: ${item.gold}</h2>
-        <p><strong>Stats :</strong></p>
-        <ul>
-            <li><strong>Attaque :</strong> ${item.stats.FlatPhysicalDamageMod || 'N/A'}</li>
-            <li><strong>Défense :</strong> ${item.stats.FlatArmorMod || 'N/A'}</li>
-            <li><strong>Magie :</strong> ${item.stats.FlatMagicDamageMod || 'N/A'}</li>
-            <li><strong>Vitesse d'attaque :</strong> ${item.stats.PercentAttackSpeedMod ? (item.stats.PercentAttackSpeedMod * 100) + "%" : 'N/A'}</li>
-            <li><strong>Vie :</strong> ${item.stats.FlatHPPoolMod || 'N/A'}</li>
-            <li><strong>Mana :</strong> ${item.stats.FlatMPPoolMod || 'N/A'}</li>
-            <li><strong>Résistance magique :</strong> ${item.stats.FlatSpellBlockMod || 'N/A'}</li>
-            <li><strong>Coup critique :</strong> ${item.stats.FlatCritChanceMod ? (item.stats.FlatCritChanceMod * 100) + "%" : 'N/A'}</li>
-            <li><strong>Vitesse de déplacement :</strong> ${item.stats.FlatMovementSpeedMod || 'N/A'}</li>
-            <li><strong>Accélération des compétences :</strong> ${item.stats.CooldownReduction || 'N/A'}</li>
-        </ul>
-    `;
-
+            <div class="item-details">
+                <button id="back-btn">Retour</button>
+                <h1>${item.name}</h1>
+                <img src="https://ddragon.leagueoflegends.com/cdn/15.5.1/img/item/${item.image}" alt="${item.name}" />
+                <h2>Prix: ${item.gold}</h2>
+                <p><strong>Description :</strong> ${item.plaintext || "Aucune description disponible"}</p>
+                <p><strong>Stats :</strong></p>
+                
+                <div class="stats-container">
+                    <ul class="stats-row">
+                        <li><strong>Attaque :</strong> ${item.stats.FlatPhysicalDamageMod || 'N/A'}</li>
+                        <li><strong>Défense :</strong> ${item.stats.FlatArmorMod || 'N/A'}</li>
+                        <li><strong>Magie :</strong> ${item.stats.FlatMagicDamageMod || 'N/A'}</li>
+                        <li><strong>Vitesse d'attaque :</strong> ${item.stats.PercentAttackSpeedMod ? `+${(item.stats.PercentAttackSpeedMod * 100).toFixed(0)}%` : 'N/A'}</li>
+                        <li><strong>Vie :</strong> ${item.stats.FlatHPPoolMod || 'N/A'}</li>
+                    </ul>
+    
+                    <ul class="stats-row">
+                        <li><strong>Mana :</strong> ${item.stats.FlatMPPoolMod || 'N/A'}</li>
+                        <li><strong>Résistance magique :</strong> ${item.stats.FlatSpellBlockMod || 'N/A'}</li>
+                        <li><strong>Coup critique :</strong> ${item.stats.FlatCritChanceMod ? `+${(item.stats.FlatCritChanceMod * 100).toFixed(0)}%` : 'N/A'}</li>
+                        <li><strong>Vitesse de déplacement :</strong> ${item.stats.FlatMovementSpeedMod || 'N/A'}</li>
+                        <li><strong>Accélération des compétences :</strong> ${item.stats.CooldownReduction || 'N/A'}</li>
+                    </ul>
+                </div>
+            </div>
+        `;
+    
         // Ajouter l'événement pour revenir à la liste des items
         document.getElementById("back-btn").addEventListener("click", () => {
             this.render();
         });
     }
-
+    
 
     // La pagination
     renderPagination() {
