@@ -13,7 +13,7 @@ class Items {
         try {
             const response = await fetch(CONFIG.itemsUrl);
             const data = await response.json();
-            this.itemsData = Object.values(data); //Tous les objets
+            this.itemsData = Object.values(data); // Tous les objets
             this.filteredItems = [...this.itemsData];
             this.render();
             this.addSearchListener();  // Ajouter le listener de recherche après le chargement des données
@@ -39,7 +39,6 @@ class Items {
 
     // Fonction pour afficher la liste des items
     renderList(items) {
-
         const list = document.getElementById("items-list");
         list.innerHTML = "";
 
@@ -47,22 +46,69 @@ class Items {
             const div = document.createElement("div");
             div.className = "item";
             div.innerHTML = `
-            <div class="item-container">
-                <img class="lazy" 
-                     data-src="https://ddragon.leagueoflegends.com/cdn/15.5.1/img/item/${item.image}" 
-                     alt="${item.name}" 
-                     src="https://via.placeholder.com/150x150?text=Loading" />
-                <span class="item-name">${item.name}</span>
-                <h2>${item.gold}</h2>
-            </div>
-        `;
+                <div class="item-container">
+                    <img class="lazy" 
+                         data-src="https://ddragon.leagueoflegends.com/cdn/15.5.1/img/item/${item.image}" 
+                         alt="${item.name}" 
+                         src="https://via.placeholder.com/150x150?text=Loading" 
+                         data-id="${item.id}" />
+                    <span class="item-name">${item.name}</span>
+                    <h2>${item.gold}</h2>
+                </div>
+            `;
             list.appendChild(div);
         });
 
         // Activer le lazy loading après le rendu
         this.lazyLoadImages();
+
+        // Ajouter un gestionnaire d'événement pour les clics sur les images
+        this.addItemClickListeners();
     }
 
+    // Fonction pour ajouter un listener sur les images des items
+    addItemClickListeners() {
+        const itemImages = document.querySelectorAll(".item-container img");
+        itemImages.forEach(image => {
+            image.addEventListener("click", (event) => {
+                const itemId = event.target.getAttribute("data-id");
+                this.showItemDetails(itemId);
+            });
+        });
+    }
+
+    // Fonction pour afficher les détails d'un item
+    // Fonction pour afficher les détails d'un item
+    showItemDetails(itemId) {
+        const item = this.itemsData.find(i => i.id == itemId);
+        if (!item) return;
+
+        const content = document.getElementById("content");
+        content.innerHTML = `
+        <button id="back-btn" style="position: absolute; top: 10px; left: 10px;">Retour</button>
+        <h1>${item.name}</h1>
+        <img src="https://ddragon.leagueoflegends.com/cdn/15.5.1/img/item/${item.image}" alt="${item.name}" />
+        <h2>Prix: ${item.gold}</h2>
+        <p><strong>Stats :</strong></p>
+        <ul>
+            <li><strong>Attaque :</strong> ${item.stats.FlatPhysicalDamageMod || 'N/A'}</li>
+            <li><strong>Défense :</strong> ${item.stats.FlatArmorMod || 'N/A'}</li>
+            <li><strong>Magie :</strong> ${item.stats.FlatMagicDamageMod || 'N/A'}</li>
+            <li><strong>Vitesse d'attaque :</strong> ${item.stats.PercentAttackSpeedMod ? (item.stats.PercentAttackSpeedMod * 100) + "%" : 'N/A'}</li>
+            <li><strong>Vie :</strong> ${item.stats.FlatHPPoolMod || 'N/A'}</li>
+            <li><strong>Mana :</strong> ${item.stats.FlatMPPoolMod || 'N/A'}</li>
+            <li><strong>Résistance magique :</strong> ${item.stats.FlatSpellBlockMod || 'N/A'}</li>
+            <li><strong>Coup critique :</strong> ${item.stats.FlatCritChanceMod ? (item.stats.FlatCritChanceMod * 100) + "%" : 'N/A'}</li>
+            <li><strong>Vitesse de déplacement :</strong> ${item.stats.FlatMovementSpeedMod || 'N/A'}</li>
+            <li><strong>Accélération des compétences :</strong> ${item.stats.CooldownReduction || 'N/A'}</li>
+        </ul>
+    `;
+
+        // Ajouter l'événement pour revenir à la liste des items
+        document.getElementById("back-btn").addEventListener("click", () => {
+            this.render();
+        });
+    }
 
 
     // La pagination
@@ -125,8 +171,6 @@ class Items {
         });
     }
 
-
-
     // Fonction de lazy loading pour les images
     lazyLoadImages() {
         const images = document.querySelectorAll('.lazy');
@@ -140,8 +184,8 @@ class Items {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const img = entry.target;
-                    img.src = img.dataset.src;// Charge l'image
-                    img.classList.remove('lazy'); // Empeche le rechargement
+                    img.src = img.dataset.src; // Charge l'image
+                    img.classList.remove('lazy'); // Empêche le rechargement
                     observer.unobserve(img);
                 }
             });
