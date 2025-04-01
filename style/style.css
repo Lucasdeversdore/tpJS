@@ -45,6 +45,51 @@ ul {
     width: 100%;
 }
 
+.item-container {
+    position: relative;
+    display: inline-block;
+}
+
+.item-name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    display: none; /* Masquer le nom par défaut */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.item-container:hover .item-name {
+    display: block; /* Afficher le nom lorsque l'élément est survolé */
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stats-row li {
+    background-color: #f4f4f4;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 120px; /* Ajuste la largeur minimale */
+}
+=======
 .img-champion-details {
     max-width : 50%;
     height : auto;
