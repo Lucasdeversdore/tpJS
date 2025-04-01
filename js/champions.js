@@ -15,13 +15,29 @@ class Champions {
         try {
             const response = await fetch(CONFIG.championsUrl);
             const data = await response.json();
-            this.championsData = Object.values(data); // Tous les champions
+            this.championsData = Object.values(data);
+            this.loadFavorites();
             this.filteredChampions = [...this.championsData];
             this.render();
             this.addSearchListener();  // Ajouter le listener de recherche après le chargement des données
         } catch (error) {
             console.error("Erreur lors du chargement des champions :", error);
         }
+    }
+
+    loadFavorites() {
+        const favorites = JSON.parse(localStorage.getItem("championFavorites")) || {};
+        this.championsData.forEach(champion => {
+            champion.favorite = !!favorites[champion.id];
+        });
+    }
+
+    toggleFavorite(championId) {
+        const favorites = JSON.parse(localStorage.getItem("championFavorites")) || {};
+        favorites[championId] = !favorites[championId];
+        localStorage.setItem("championFavorites", JSON.stringify(favorites));
+        this.loadFavorites();
+        this.renderList(this.championsData);
     }
 
     // Fonction pour afficher la liste des champions et la pagination et la recherche
@@ -33,7 +49,6 @@ class Champions {
             <ul id="champions-list"></ul>
             <div id="pagination"></div>
         `;
-
         this.renderList(this.getPaginatedData()); // Afficher les champions en fonction de la page actuelle
         this.renderPagination(); // Afficher la pagination
     }
@@ -43,18 +58,30 @@ class Champions {
         const list = document.getElementById("champions-list");
         list.innerHTML = "";
 
+        champions.sort((a, b) => (b.favorite ? 1 : 0) - (a.favorite ? 1 : 0));
+
         champions.forEach(champion => {
             const div = document.createElement("div");
             div.className = "champion";
             div.innerHTML = `
-                <img class="champion-img" data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg" alt="${champion.name}">
+                <input type="checkbox" id="fav-${champion.id}" ${champion.favorite ? "checked" : ""} />
+                <label for="fav-${champion.id}">★</label>
+                <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg" alt="${champion.name}">
                 <h2>${champion.name}</h2>
                 <p>${champion.title}</p>
             `;
-            div.addEventListener("click", () => {
-                history.pushState({}, "", `/champion/${champion.id}`);
-                afficherChampionDetails(champion.id);
+
+            div.querySelector("input").addEventListener("change", () => {
+                this.toggleFavorite(champion.id);
             });
+
+            div.addEventListener("click", (e) => {
+                if (e.target.tagName !== "INPUT" && e.target.tagName !== "LABEL") {
+                    history.pushState({}, "", `/champion/${champion.id}`);
+                    afficherChampionDetails(champion.id);
+                }
+            });
+
             list.appendChild(div);
         });
 
