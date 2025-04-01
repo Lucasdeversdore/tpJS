@@ -44,3 +44,25 @@ ul {
 .champion h2, .champion img, .champion p {
     width: 100%;
 }
+
+.item-container {
+    position: relative;
+    display: inline-block;
+}
+
+.item-name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    display: none; /* Masquer le nom par défaut */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.item-container:hover .item-name {
+    display: block; /* Afficher le nom lorsque l'élément est survolé */
+}

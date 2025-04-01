@@ -2,8 +2,8 @@ import { CONFIG } from './config.js';
 
 class Champions {
     constructor() {
-        this.championsData = []; // Toutes les données des champions
-        this.filteredChampions = [];  // Liste des champions filtrés après recherche
+        this.championsData = [];
+        this.filteredChampions = [];
         this.currentPage = 1;
         this.itemsPerPage = 12;
     }
@@ -14,7 +14,7 @@ class Champions {
             const response = await fetch(CONFIG.championsUrl);
             const data = await response.json();
             this.championsData = Object.values(data); // Tous les champions
-            this.filteredChampions = [...this.championsData];  // Initialement, tous les champions sont affichés
+            this.filteredChampions = [...this.championsData];
             this.render();
             this.addSearchListener();  // Ajouter le listener de recherche après le chargement des données
         } catch (error) {
@@ -22,7 +22,7 @@ class Champions {
         }
     }
 
-    // Fonction pour afficher la liste des champions et la pagination
+    // Fonction pour afficher la liste des champions et la pagination et la recherche
     render() {
         const content = document.getElementById("content");
         content.innerHTML = `
@@ -32,8 +32,8 @@ class Champions {
             <div id="pagination"></div>
         `;
 
-        this.renderList(this.getPaginatedData());
-        this.renderPagination();
+        this.renderList(this.getPaginatedData()); // Afficher les champions en fonction de la page actuelle
+        this.renderPagination(); // Afficher la pagination
     }
 
     // Fonction pour afficher la liste des champions
@@ -45,14 +45,14 @@ class Champions {
             const div = document.createElement("div");
             div.className = "champion";
             div.innerHTML = `
-                <img class="champion-img" data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg" alt="${champion.name}" loading="lazy">
+                <img class="champion-img" data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg" alt="${champion.name}">
                 <h2>${champion.name}</h2>
                 <p>${champion.title}</p>
             `;
             list.appendChild(div);
         });
 
-        // Le lazy loading
+        // Le lazy loading des images
         this.lazyLoadImages();
     }
 
@@ -64,14 +64,15 @@ class Champions {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const image = entry.target;
-                    image.src = image.dataset.src;
-                    image.removeAttribute('data-src');
-                    observer.unobserve(image); // Ne plus observer cette image une fois qu'elle est chargée
+                    image.src = image.dataset.src; // Charge l'image
+                    image.removeAttribute('data-src'); // Empeche le rechargement
+                    observer.unobserve(image); 
                 }
             });
         }, {
-            rootMargin: '0px 0px 200px 0px' // Chargement des images légèrement avant qu'elles ne soient visibles en fonction de ou elle est vers le bas
+            rootMargin: '0px 0px 200px 0px' // Chargement des images légèrement avant qu'elles ne soient visibles
         });
+
         images.forEach(image => {
             observer.observe(image);
         });
@@ -90,7 +91,7 @@ class Champions {
 
         pagination.innerHTML = paginationHTML;
 
-        // Bouton changer de page
+        // Bouton pour changer de page
         document.getElementById("prev-page").addEventListener("click", () => {
             if (this.currentPage > 1) {
                 this.currentPage--;
@@ -108,6 +109,8 @@ class Champions {
             }
         });
     }
+
+    // Fonction pour obtenir les champions pour la page actuelle
     getPaginatedData() {
         const startIndex = (this.currentPage - 1) * this.itemsPerPage;
         const endIndex = startIndex + this.itemsPerPage;
@@ -120,14 +123,14 @@ class Champions {
         searchInput.addEventListener("input", () => {
             const searchTerm = searchInput.value.toLowerCase();
 
-            // Filtre par nom ou titre
+            // Filtrer par nom ou titre
             this.filteredChampions = this.championsData.filter(champion => 
                 champion.name.toLowerCase().includes(searchTerm) || 
                 champion.title.toLowerCase().includes(searchTerm)
             );
             this.currentPage = 1;
 
-            // Affichage avec pagination+filtre
+            // Affichage avec pagination et filtre
             this.renderList(this.getPaginatedData());
             this.renderPagination();
         });
