@@ -18,7 +18,8 @@
             "attackrange": 175,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Ahri": {
         "id": "Ahri",
@@ -40,7 +41,8 @@
             "attackrange": 550,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Akali": {
         "id": "Akali",
@@ -61,7 +63,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Akshan": {
         "id": "Akshan",
@@ -83,7 +86,8 @@
             "attackrange": 500,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Alistar": {
         "id": "Alistar",
@@ -105,7 +109,8 @@
             "attackrange": 125,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Ambessa": {
         "id": "Ambessa",
@@ -127,7 +132,8 @@
             "attackrange": 125,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Amumu": {
         "id": "Amumu",
@@ -149,7 +155,8 @@
             "attackrange": 125,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Anivia": {
         "id": "Anivia",
@@ -170,7 +177,8 @@
             "attackrange": 600,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Annie": {
         "id": "Annie",
@@ -192,7 +200,8 @@
             "attackrange": 625,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Aphelios": {
         "id": "Aphelios",
@@ -213,7 +222,8 @@
             "attackrange": 550,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Ashe": {
         "id": "Ashe",
@@ -235,7 +245,8 @@
             "attackrange": 600,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "AurelionSol": {
         "id": "AurelionSol",
@@ -256,7 +267,8 @@
             "attackrange": 550,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Aurora": {
         "id": "Aurora",
@@ -278,7 +290,8 @@
             "attackrange": 550,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Azir": {
         "id": "Azir",
@@ -300,7 +313,8 @@
             "attackrange": 525,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Bard": {
         "id": "Bard",
@@ -322,7 +336,8 @@
             "attackrange": 500,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Belveth": {
         "id": "Belveth",
@@ -343,7 +358,8 @@
             "attackrange": 150,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Blitzcrank": {
         "id": "Blitzcrank",
@@ -365,7 +381,8 @@
             "attackrange": 125,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Brand": {
         "id": "Brand",
@@ -387,7 +404,8 @@
             "attackrange": 550,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Braum": {
         "id": "Braum",
@@ -409,7 +427,8 @@
             "attackrange": 125,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Briar": {
         "id": "Briar",
@@ -431,7 +450,8 @@
             "attackrange": 125,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Caitlyn": {
         "id": "Caitlyn",
@@ -452,7 +472,8 @@
             "attackrange": 650,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Camille": {
         "id": "Camille",
@@ -474,7 +495,8 @@
             "attackrange": 125,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Cassiopeia": {
         "id": "Cassiopeia",
@@ -495,7 +517,8 @@
             "attackrange": 550,
             "movespeed": 328,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Chogath": {
         "id": "Chogath",
@@ -517,7 +540,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Corki": {
         "id": "Corki",
@@ -539,7 +563,8 @@
             "attackrange": 550,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Darius": {
         "id": "Darius",
@@ -561,7 +586,8 @@
             "attackrange": 175,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Diana": {
         "id": "Diana",
@@ -583,7 +609,8 @@
             "attackrange": 150,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Draven": {
         "id": "Draven",
@@ -604,7 +631,8 @@
             "attackrange": 550,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "DrMundo": {
         "id": "DrMundo",
@@ -626,7 +654,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Ekko": {
         "id": "Ekko",
@@ -648,7 +677,8 @@
             "attackrange": 125,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Elise": {
         "id": "Elise",
@@ -670,7 +700,8 @@
             "attackrange": 550,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Evelynn": {
         "id": "Evelynn",
@@ -692,7 +723,8 @@
             "attackrange": 125,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Ezreal": {
         "id": "Ezreal",
@@ -714,7 +746,8 @@
             "attackrange": 550,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Fiddlesticks": {
         "id": "Fiddlesticks",
@@ -736,7 +769,8 @@
             "attackrange": 480,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Fiora": {
         "id": "Fiora",
@@ -758,7 +792,8 @@
             "attackrange": 150,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Fizz": {
         "id": "Fizz",
@@ -780,7 +815,8 @@
             "attackrange": 175,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Galio": {
         "id": "Galio",
@@ -802,7 +838,8 @@
             "attackrange": 150,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Gangplank": {
         "id": "Gangplank",
@@ -823,7 +860,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Garen": {
         "id": "Garen",
@@ -845,7 +883,8 @@
             "attackrange": 175,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Gnar": {
         "id": "Gnar",
@@ -867,7 +906,8 @@
             "attackrange": 175,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Gragas": {
         "id": "Gragas",
@@ -889,7 +929,8 @@
             "attackrange": 125,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Graves": {
         "id": "Graves",
@@ -910,7 +951,8 @@
             "attackrange": 425,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Gwen": {
         "id": "Gwen",
@@ -931,7 +973,8 @@
             "attackrange": 150,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Hecarim": {
         "id": "Hecarim",
@@ -953,7 +996,8 @@
             "attackrange": 175,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Heimerdinger": {
         "id": "Heimerdinger",
@@ -975,7 +1019,8 @@
             "attackrange": 550,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Hwei": {
         "id": "Hwei",
@@ -997,7 +1042,8 @@
             "attackrange": 550,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Illaoi": {
         "id": "Illaoi",
@@ -1019,7 +1065,8 @@
             "attackrange": 125,
             "movespeed": 350,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Irelia": {
         "id": "Irelia",
@@ -1041,7 +1088,8 @@
             "attackrange": 200,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Ivern": {
         "id": "Ivern",
@@ -1063,7 +1111,8 @@
             "attackrange": 475,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Janna": {
         "id": "Janna",
@@ -1085,7 +1134,8 @@
             "attackrange": 550,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "JarvanIV": {
         "id": "JarvanIV",
@@ -1107,7 +1157,8 @@
             "attackrange": 175,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Jax": {
         "id": "Jax",
@@ -1128,7 +1179,8 @@
             "attackrange": 125,
             "movespeed": 350,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Jayce": {
         "id": "Jayce",
@@ -1150,7 +1202,8 @@
             "attackrange": 125,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Jhin": {
         "id": "Jhin",
@@ -1172,7 +1225,8 @@
             "attackrange": 550,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Jinx": {
         "id": "Jinx",
@@ -1193,7 +1247,8 @@
             "attackrange": 525,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Kaisa": {
         "id": "Kaisa",
@@ -1215,7 +1270,8 @@
             "attackrange": 525,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Kalista": {
         "id": "Kalista",
@@ -1236,7 +1292,8 @@
             "attackrange": 525,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Karma": {
         "id": "Karma",
@@ -1258,7 +1315,8 @@
             "attackrange": 525,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Karthus": {
         "id": "Karthus",
@@ -1279,7 +1337,8 @@
             "attackrange": 450,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Kassadin": {
         "id": "Kassadin",
@@ -1301,7 +1360,8 @@
             "attackrange": 150,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Katarina": {
         "id": "Katarina",
@@ -1323,7 +1383,8 @@
             "attackrange": 125,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Kayle": {
         "id": "Kayle",
@@ -1345,7 +1406,8 @@
             "attackrange": 175,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Kayn": {
         "id": "Kayn",
@@ -1367,7 +1429,8 @@
             "attackrange": 175,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Kennen": {
         "id": "Kennen",
@@ -1388,7 +1451,8 @@
             "attackrange": 550,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Khazix": {
         "id": "Khazix",
@@ -1409,7 +1473,8 @@
             "attackrange": 125,
             "movespeed": 350,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Kindred": {
         "id": "Kindred",
@@ -1430,7 +1495,8 @@
             "attackrange": 500,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Kled": {
         "id": "Kled",
@@ -1451,7 +1517,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "KogMaw": {
         "id": "KogMaw",
@@ -1473,7 +1540,8 @@
             "attackrange": 500,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "KSante": {
         "id": "KSante",
@@ -1495,7 +1563,8 @@
             "attackrange": 150,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Leblanc": {
         "id": "Leblanc",
@@ -1517,7 +1586,8 @@
             "attackrange": 525,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "LeeSin": {
         "id": "LeeSin",
@@ -1539,7 +1609,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Leona": {
         "id": "Leona",
@@ -1561,7 +1632,8 @@
             "attackrange": 125,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Lillia": {
         "id": "Lillia",
@@ -1583,7 +1655,8 @@
             "attackrange": 325,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Lissandra": {
         "id": "Lissandra",
@@ -1604,7 +1677,8 @@
             "attackrange": 550,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Lucian": {
         "id": "Lucian",
@@ -1626,7 +1700,8 @@
             "attackrange": 500,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Lulu": {
         "id": "Lulu",
@@ -1648,7 +1723,8 @@
             "attackrange": 550,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Lux": {
         "id": "Lux",
@@ -1670,7 +1746,8 @@
             "attackrange": 550,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Malphite": {
         "id": "Malphite",
@@ -1692,7 +1769,8 @@
             "attackrange": 125,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Malzahar": {
         "id": "Malzahar",
@@ -1713,7 +1791,8 @@
             "attackrange": 500,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Maokai": {
         "id": "Maokai",
@@ -1735,7 +1814,8 @@
             "attackrange": 125,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "MasterYi": {
         "id": "MasterYi",
@@ -1757,7 +1837,8 @@
             "attackrange": 175,
             "movespeed": 355,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Mel": {
         "id": "Mel",
@@ -1779,7 +1860,8 @@
             "attackrange": 550,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Milio": {
         "id": "Milio",
@@ -1801,7 +1883,8 @@
             "attackrange": 525,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "MissFortune": {
         "id": "MissFortune",
@@ -1823,7 +1906,8 @@
             "attackrange": 550,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "MonkeyKing": {
         "id": "MonkeyKing",
@@ -1845,7 +1929,8 @@
             "attackrange": 175,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Mordekaiser": {
         "id": "Mordekaiser",
@@ -1867,7 +1952,8 @@
             "attackrange": 175,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Morgana": {
         "id": "Morgana",
@@ -1889,7 +1975,8 @@
             "attackrange": 450,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Naafiri": {
         "id": "Naafiri",
@@ -1911,7 +1998,8 @@
             "attackrange": 125,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Nami": {
         "id": "Nami",
@@ -1933,7 +2021,8 @@
             "attackrange": 550,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Nasus": {
         "id": "Nasus",
@@ -1955,7 +2044,8 @@
             "attackrange": 125,
             "movespeed": 350,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Nautilus": {
         "id": "Nautilus",
@@ -1977,7 +2067,8 @@
             "attackrange": 175,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Neeko": {
         "id": "Neeko",
@@ -1999,7 +2090,8 @@
             "attackrange": 550,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Nidalee": {
         "id": "Nidalee",
@@ -2021,7 +2113,8 @@
             "attackrange": 525,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Nilah": {
         "id": "Nilah",
@@ -2043,7 +2136,8 @@
             "attackrange": 225,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Nocturne": {
         "id": "Nocturne",
@@ -2065,7 +2159,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Nunu": {
         "id": "Nunu",
@@ -2087,7 +2182,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Olaf": {
         "id": "Olaf",
@@ -2109,7 +2205,8 @@
             "attackrange": 125,
             "movespeed": 350,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Orianna": {
         "id": "Orianna",
@@ -2131,7 +2228,8 @@
             "attackrange": 525,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Ornn": {
         "id": "Ornn",
@@ -2152,7 +2250,8 @@
             "attackrange": 175,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Pantheon": {
         "id": "Pantheon",
@@ -2174,7 +2273,8 @@
             "attackrange": 175,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Poppy": {
         "id": "Poppy",
@@ -2196,7 +2296,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Pyke": {
         "id": "Pyke",
@@ -2218,7 +2319,8 @@
             "attackrange": 150,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Qiyana": {
         "id": "Qiyana",
@@ -2239,7 +2341,8 @@
             "attackrange": 150,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Quinn": {
         "id": "Quinn",
@@ -2261,7 +2364,8 @@
             "attackrange": 525,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Rakan": {
         "id": "Rakan",
@@ -2282,7 +2386,8 @@
             "attackrange": 300,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Rammus": {
         "id": "Rammus",
@@ -2303,7 +2408,8 @@
             "attackrange": 125,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "RekSai": {
         "id": "RekSai",
@@ -2325,7 +2431,8 @@
             "attackrange": 175,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Rell": {
         "id": "Rell",
@@ -2347,7 +2454,8 @@
             "attackrange": 175,
             "movespeed": 315,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Renata": {
         "id": "Renata",
@@ -2369,7 +2477,8 @@
             "attackrange": 550,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Renekton": {
         "id": "Renekton",
@@ -2391,7 +2500,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Rengar": {
         "id": "Rengar",
@@ -2413,7 +2523,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Riven": {
         "id": "Riven",
@@ -2435,7 +2546,8 @@
             "attackrange": 125,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Rumble": {
         "id": "Rumble",
@@ -2457,7 +2569,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Ryze": {
         "id": "Ryze",
@@ -2478,7 +2591,8 @@
             "attackrange": 550,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Samira": {
         "id": "Samira",
@@ -2500,7 +2614,8 @@
             "attackrange": 500,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Sejuani": {
         "id": "Sejuani",
@@ -2521,7 +2636,8 @@
             "attackrange": 150,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Senna": {
         "id": "Senna",
@@ -2543,7 +2659,8 @@
             "attackrange": 600,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Seraphine": {
         "id": "Seraphine",
@@ -2565,7 +2682,8 @@
             "attackrange": 525,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Sett": {
         "id": "Sett",
@@ -2587,7 +2705,8 @@
             "attackrange": 125,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Shaco": {
         "id": "Shaco",
@@ -2608,7 +2727,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Shen": {
         "id": "Shen",
@@ -2629,7 +2749,8 @@
             "attackrange": 125,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Shyvana": {
         "id": "Shyvana",
@@ -2651,7 +2772,8 @@
             "attackrange": 125,
             "movespeed": 350,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Singed": {
         "id": "Singed",
@@ -2673,7 +2795,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Sion": {
         "id": "Sion",
@@ -2695,7 +2818,8 @@
             "attackrange": 175,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Sivir": {
         "id": "Sivir",
@@ -2716,7 +2840,8 @@
             "attackrange": 500,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Skarner": {
         "id": "Skarner",
@@ -2738,7 +2863,8 @@
             "attackrange": 150,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Smolder": {
         "id": "Smolder",
@@ -2760,7 +2886,8 @@
             "attackrange": 550,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Sona": {
         "id": "Sona",
@@ -2782,7 +2909,8 @@
             "attackrange": 550,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Soraka": {
         "id": "Soraka",
@@ -2804,7 +2932,8 @@
             "attackrange": 550,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Swain": {
         "id": "Swain",
@@ -2826,7 +2955,8 @@
             "attackrange": 525,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Sylas": {
         "id": "Sylas",
@@ -2848,7 +2978,8 @@
             "attackrange": 175,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Syndra": {
         "id": "Syndra",
@@ -2869,7 +3000,8 @@
             "attackrange": 550,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "TahmKench": {
         "id": "TahmKench",
@@ -2891,7 +3023,8 @@
             "attackrange": 175,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Taliyah": {
         "id": "Taliyah",
@@ -2913,7 +3046,8 @@
             "attackrange": 525,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Talon": {
         "id": "Talon",
@@ -2934,7 +3068,8 @@
             "attackrange": 125,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Taric": {
         "id": "Taric",
@@ -2956,7 +3091,8 @@
             "attackrange": 150,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Teemo": {
         "id": "Teemo",
@@ -2978,7 +3114,8 @@
             "attackrange": 500,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Thresh": {
         "id": "Thresh",
@@ -3000,7 +3137,8 @@
             "attackrange": 450,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Tristana": {
         "id": "Tristana",
@@ -3022,7 +3160,8 @@
             "attackrange": 550,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Trundle": {
         "id": "Trundle",
@@ -3044,7 +3183,8 @@
             "attackrange": 175,
             "movespeed": 350,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Tryndamere": {
         "id": "Tryndamere",
@@ -3066,7 +3206,8 @@
             "attackrange": 175,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "TwistedFate": {
         "id": "TwistedFate",
@@ -3088,7 +3229,8 @@
             "attackrange": 525,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Twitch": {
         "id": "Twitch",
@@ -3110,7 +3252,8 @@
             "attackrange": 550,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Udyr": {
         "id": "Udyr",
@@ -3132,7 +3275,8 @@
             "attackrange": 125,
             "movespeed": 350,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Urgot": {
         "id": "Urgot",
@@ -3154,7 +3298,8 @@
             "attackrange": 350,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Varus": {
         "id": "Varus",
@@ -3176,7 +3321,8 @@
             "attackrange": 575,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Vayne": {
         "id": "Vayne",
@@ -3198,7 +3344,8 @@
             "attackrange": 550,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Veigar": {
         "id": "Veigar",
@@ -3219,7 +3366,8 @@
             "attackrange": 550,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Velkoz": {
         "id": "Velkoz",
@@ -3241,7 +3389,8 @@
             "attackrange": 525,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Vex": {
         "id": "Vex",
@@ -3262,7 +3411,8 @@
             "attackrange": 550,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Vi": {
         "id": "Vi",
@@ -3284,7 +3434,8 @@
             "attackrange": 125,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Viego": {
         "id": "Viego",
@@ -3306,7 +3457,8 @@
             "attackrange": 200,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Viktor": {
         "id": "Viktor",
@@ -3327,7 +3479,8 @@
             "attackrange": 525,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Vladimir": {
         "id": "Vladimir",
@@ -3349,7 +3502,8 @@
             "attackrange": 450,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Volibear": {
         "id": "Volibear",
@@ -3371,7 +3525,8 @@
             "attackrange": 150,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Warwick": {
         "id": "Warwick",
@@ -3393,7 +3548,8 @@
             "attackrange": 125,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Xayah": {
         "id": "Xayah",
@@ -3414,7 +3570,8 @@
             "attackrange": 525,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Xerath": {
         "id": "Xerath",
@@ -3436,7 +3593,8 @@
             "attackrange": 525,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "XinZhao": {
         "id": "XinZhao",
@@ -3458,7 +3616,8 @@
             "attackrange": 175,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Yasuo": {
         "id": "Yasuo",
@@ -3480,7 +3639,8 @@
             "attackrange": 175,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Yone": {
         "id": "Yone",
@@ -3502,7 +3662,8 @@
             "attackrange": 175,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Yorick": {
         "id": "Yorick",
@@ -3524,7 +3685,8 @@
             "attackrange": 175,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Yuumi": {
         "id": "Yuumi",
@@ -3546,7 +3708,8 @@
             "attackrange": 425,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Zac": {
         "id": "Zac",
@@ -3568,7 +3731,8 @@
             "attackrange": 175,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Zed": {
         "id": "Zed",
@@ -3589,7 +3753,8 @@
             "attackrange": 125,
             "movespeed": 345,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Zeri": {
         "id": "Zeri",
@@ -3610,7 +3775,8 @@
             "attackrange": 500,
             "movespeed": 330,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Ziggs": {
         "id": "Ziggs",
@@ -3631,7 +3797,8 @@
             "attackrange": 550,
             "movespeed": 325,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Zilean": {
         "id": "Zilean",
@@ -3653,7 +3820,8 @@
             "attackrange": 550,
             "movespeed": 335,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Zoe": {
         "id": "Zoe",
@@ -3674,7 +3842,8 @@
             "attackrange": 550,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     },
     "Zyra": {
         "id": "Zyra",
@@ -3696,6 +3865,7 @@
             "attackrange": 575,
             "movespeed": 340,
             "crit": 0
-        }
+        },
+        "items-fav": []
     }
 }

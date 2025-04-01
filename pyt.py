@@ -49,7 +49,8 @@ for champion_id, champion_data in data["data"].items():
             "movespeed" : champion_data["stats"]["movespeed"],
             "crit" : champion_data["stats"]["crit"],
             "attackspeed" : champion_data["stats"]["attackspeed"]
-        }
+        },
+        "items-fav": []
     }
 
 # Sauvegarder en JSON simplifié
