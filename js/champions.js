@@ -6,7 +6,7 @@ class Champions {
         this.championsData = [];
         this.filteredChampions = [];
         this.currentPage = 1;
-        this.itemsPerPage = 12;
+        this.itemsPerPage = 60;
     }
 
     async fetchChampions() {
@@ -66,6 +66,7 @@ class Champions {
         champions.forEach(champion => {
             const div = document.createElement("div");
             div.className = "champion";
+
             div.innerHTML = `
                 <input type="checkbox" id="fav-${champion.id}" ${champion.favorite ? "checked" : ""} />
                 <label for="fav-${champion.id}">★</label>
@@ -74,10 +75,12 @@ class Champions {
                 <p>${champion.title}</p>
             `;
 
+            // Ajouter l'événement pour mettre à jour le favori
             div.querySelector("input").addEventListener("change", () => {
                 this.toggleFavorite(champion.id);
             });
 
+            // Ajouter l'événement pour la navigation vers la page de détails du champion
             div.addEventListener("click", (e) => {
                 if (e.target.tagName !== "INPUT" && e.target.tagName !== "LABEL") {
                     history.pushState({}, "", `/champion/${champion.id}`);
@@ -87,6 +90,43 @@ class Champions {
 
             list.appendChild(div);
         });
+
+        // Lazy loading des images sans cache
+        this.lazyLoadImages();
+    }
+
+    // Fonction pour charger une image sans cache
+    async loadImage(championId) {
+        const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championId}_0.jpg`;
+        try {
+            const response = await fetch(imageUrl, { cache: "no-store" });
+            const blob = await response.blob();
+            return URL.createObjectURL(blob); // URL temporaire pour éviter le cache
+        } catch (error) {
+            console.error(`Erreur lors du chargement de l'image pour ${championId}:`, error);
+            return "https://via.placeholder.com/150x150?text=Error"; // Image de remplacement en cas d'erreur
+        }
+    }
+
+    // Fonction de lazy loading pour les images sans cache
+    lazyLoadImages() {
+        const images = document.querySelectorAll('.lazy');
+
+        const observer = new IntersectionObserver(async (entries, observer) => {
+            for (const entry of entries) {
+                if (entry.isIntersecting) {
+                    const image = entry.target;
+                    const championId = image.dataset.id;
+                    image.src = await this.loadImage(championId);
+                    image.classList.remove('lazy'); // Évite de le recharger
+                    observer.unobserve(image);
+                }
+            }
+        }, {
+            rootMargin: '0px 0px 200px 0px' // Chargement des images légèrement avant qu'elles ne soient visibles
+        });
+
+        images.forEach(image => observer.observe(image));
     }
 
     getPaginatedData() {

@@ -2,23 +2,23 @@ import { CONFIG } from "./config.js";
 
 class Items {
     constructor() {
-        this.itemsData = [];
-        this.filteredItems = [];
-        this.currentPage = 1;
-        this.itemsPerPage = 60;
+        this.itemsData = []; // Contiendra les données des items
+        this.filteredItems = []; // Contiendra les items filtrés en fonction de la recherche
+        this.currentPage = 1; // Page actuelle pour la pagination
+        this.itemsPerPage = 60; // Nombre d'items par page
     }
 
     // Fonction pour récupérer les items
     async fetchItems() {
         try {
-            const response = await fetch(CONFIG.itemsUrl);
-            const data = await response.json();
-            this.itemsData = Object.values(data); // Tous les objets
-            this.filteredItems = [...this.itemsData];
-            this.render();
-            this.addSearchListener();  // Ajouter le listener de recherche après le chargement des données
+            const response = await fetch(CONFIG.itemsUrl); // Récupère les données depuis l'URL configurée
+            const data = await response.json(); // Convertit la réponse en format JSON
+            this.itemsData = Object.values(data); // Transforme les données en un tableau d'objets
+            this.filteredItems = [...this.itemsData]; // Initialisation des items filtrés
+            this.render(); // Appelle la fonction render pour afficher les items
+            this.addSearchListener();  // Ajoute le listener de recherche après le chargement des données
         } catch (error) {
-            console.error("Erreur lors du chargement des items :", error);
+            console.error("Erreur lors du chargement des items :", error); // Gère l'erreur si la récupération échoue
         }
     }
 
@@ -32,19 +32,19 @@ class Items {
             <div id="pagination"></div>
         `;
 
-        this.renderList(this.getPaginatedData());  // Afficher les items en fonction de la page actuelle
-        this.renderPagination();  // Afficher la pagination
-        this.lazyLoadImages();
+        this.renderList(this.getPaginatedData());  // Affiche les items en fonction de la page actuelle
+        this.renderPagination();  // Affiche la pagination
+        this.lazyLoadImages();  // Charge les images de façon différée pour améliorer les performances
     }
 
     // Fonction pour afficher la liste des items
     renderList(items) {
         const list = document.getElementById("items-list");
-        list.innerHTML = "";
+        list.innerHTML = ""; // Vide la liste avant d'ajouter les nouveaux éléments
 
         items.forEach(item => {
             const div = document.createElement("div");
-            div.className = "item";
+            div.className = "item"; // Classe pour chaque élément de la liste
             div.innerHTML = `
                 <div class="item-container">
                     <img class="lazy" 
@@ -59,8 +59,8 @@ class Items {
             list.appendChild(div);
         });
 
-        this.lazyLoadImages();
-        this.addItemClickListeners();
+        this.lazyLoadImages(); // Fonction de lazy loading des images
+        this.addItemClickListeners(); // Ajoute des listeners pour gérer les clics sur les items
     }
 
     // Fonction pour ajouter un listener sur les images des items
@@ -68,12 +68,13 @@ class Items {
         const itemImages = document.querySelectorAll(".item-container img");
         itemImages.forEach(image => {
             image.addEventListener("click", (event) => {
-                const itemId = event.target.getAttribute("data-id");
-                this.showItemDetails(itemId);
+                const itemId = event.target.getAttribute("data-id"); // Récupère l'ID de l'item sur lequel on a cliqué
+                this.showItemDetails(itemId); // Affiche les détails de l'item
             });
         });
     }
 
+    // Fonction pour afficher les détails d'un item lorsqu'il est cliqué
     showItemDetails(itemId) {
         const item = this.itemsData.find(i => i.id == itemId);
         if (!item) return;
@@ -83,7 +84,7 @@ class Items {
             <div class="item-details">
                 <button id="back-btn">Retour</button>
                 <h1>${item.name}</h1>
-                <img src="https://ddragon.leagueoflegends.com/cdn/15.5.1/img/item/${item.image}" alt="${item.name}" />
+                <img src="https://ddragon.leagueoflegends.com/cdn/15.5.1/img/item/${item.image}?nocache=${new Date().getTime()}" alt="${item.name}" />
                 <h2>Prix: ${item.gold}</h2>
                 <p><strong>Description :</strong> ${item.plaintext || "Aucune description disponible"}</p>
                 <p><strong>Stats :</strong></p>
@@ -110,15 +111,16 @@ class Items {
     
         // Ajouter l'événement pour revenir à la liste des items
         document.getElementById("back-btn").addEventListener("click", () => {
+ 
+            this.currentPage = 1;
             this.render();
         });
     }
-    
 
-    // La pagination
+    // Fonction pour afficher la pagination
     renderPagination() {
         const pagination = document.getElementById("pagination");
-        const totalPages = Math.ceil(this.filteredItems.length / this.itemsPerPage);
+        const totalPages = Math.ceil(this.filteredItems.length / this.itemsPerPage); // Calcule le nombre total de pages
 
         let paginationHTML = `
             <button ${this.currentPage === 1 ? 'disabled' : ''} id="prev-page">Précédent</button>
@@ -128,12 +130,12 @@ class Items {
 
         pagination.innerHTML = paginationHTML;
 
-        // Bouton pour changer de page
+        // Boutons pour changer de page
         document.getElementById("prev-page").addEventListener("click", () => {
             if (this.currentPage > 1) {
                 this.currentPage--;
-                this.renderList(this.getPaginatedData());
-                this.renderPagination();
+                this.renderList(this.getPaginatedData()); // Met à jour l'affichage
+                this.renderPagination(); // Met à jour la pagination
             }
         });
 
@@ -141,33 +143,33 @@ class Items {
             const totalPages = Math.ceil(this.filteredItems.length / this.itemsPerPage);
             if (this.currentPage < totalPages) {
                 this.currentPage++;
-                this.renderList(this.getPaginatedData());
-                this.renderPagination();
+                this.renderList(this.getPaginatedData()); // Met à jour l'affichage
+                this.renderPagination(); // Met à jour la pagination
             }
         });
     }
 
-    // Fonction pour obtenir les items pour la page actuelle
+    // Fonction pour obtenir les items de la page actuelle
     getPaginatedData() {
         const startIndex = (this.currentPage - 1) * this.itemsPerPage;
         const endIndex = startIndex + this.itemsPerPage;
-        return this.filteredItems.slice(startIndex, endIndex); // Paginer les items filtrés
+        return this.filteredItems.slice(startIndex, endIndex); // Retourne les items filtrés pour la page actuelle
     }
 
     // Fonction pour ajouter le listener de recherche
     addSearchListener() {
         const searchInput = document.getElementById("search-items");
         searchInput.addEventListener("input", () => {
-            const searchTerm = searchInput.value.toLowerCase();
+            const searchTerm = searchInput.value.toLowerCase(); // Récupère le terme de recherche en minuscule
 
             // Filtrer les items par nom ou prix
             this.filteredItems = this.itemsData.filter(item => {
                 const itemNameMatch = item.name.toLowerCase().includes(searchTerm);
                 const itemPriceMatch = item.gold.toString().toLowerCase().includes(searchTerm);
-                return itemNameMatch || itemPriceMatch; // Retourner les items qui matchent soit par nom soit par prix
+                return itemNameMatch || itemPriceMatch; // Retourne les items qui correspondent au nom ou au prix
             });
 
-            this.currentPage = 1;
+            this.currentPage = 1; // Réinitialise la page actuelle lors d'une nouvelle recherche
 
             // Affichage avec pagination et filtre
             this.renderList(this.getPaginatedData());
@@ -180,7 +182,7 @@ class Items {
         const images = document.querySelectorAll('.lazy');
 
         const options = {
-            rootMargin: '0px 0px 200px 0px', // Chargement des images légèrement avant qu'elles ne soient visibles en fonction de ou elle est vers le bas
+            rootMargin: '0px 0px 200px 0px', // Chargement des images légèrement avant qu'elles ne soient visibles
             threshold: 0.01 // L'image doit être à 1% visible pour être chargée
         };
 
@@ -189,15 +191,16 @@ class Items {
                 if (entry.isIntersecting) {
                     const img = entry.target;
                     img.src = img.dataset.src; // Charge l'image
-                    img.classList.remove('lazy'); // Empêche le rechargement
-                    observer.unobserve(img);
+                    img.classList.remove('lazy'); // Enlève la classe lazy pour éviter de la charger à nouveau
+                    observer.unobserve(img); // Arrête d'observer cette image
                 }
             });
         }, options);
 
-        images.forEach(image => observer.observe(image));
+        images.forEach(image => observer.observe(image)); // Observateur pour chaque image
     }
 }
+
 
 export function afficherItems() {
     const items = new Items();
