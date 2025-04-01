@@ -9,21 +9,44 @@ class Champions {
         this.itemsPerPage = 60;
     }
 
-    // Fonction pour récupérer les champions
     async fetchChampions() {
         try {
             const response = await fetch(CONFIG.championsUrl);
             const data = await response.json();
-            this.championsData = Object.values(data); // Tous les champions
+            this.championsData = Object.values(data);
+            this.loadFavorites();
             this.filteredChampions = [...this.championsData];
+            this.sortChampions();
             this.render();
-            this.addSearchListener(); // Ajouter le listener de recherche après le chargement des données
+            this.addSearchListener();
         } catch (error) {
             console.error("Erreur lors du chargement des champions :", error);
         }
     }
 
-    // Fonction pour afficher la liste des champions + pagination et recherche
+    loadFavorites() {
+        const favorites = JSON.parse(localStorage.getItem("championFavorites")) || {};
+        this.championsData.forEach(champion => {
+            champion.favorite = !!favorites[champion.id];
+        });
+    }
+
+    toggleFavorite(championId) {
+        const favorites = JSON.parse(localStorage.getItem("championFavorites")) || {};
+        favorites[championId] = !favorites[championId];
+        localStorage.setItem("championFavorites", JSON.stringify(favorites));
+        this.loadFavorites();
+        this.sortChampions();
+        this.currentPage = 1;
+        this.renderList(this.getPaginatedData());
+        this.renderPagination();
+    }
+
+    sortChampions() {
+        this.championsData.sort((a, b) => (b.favorite ? 1 : 0) - (a.favorite ? 1 : 0));
+        this.filteredChampions = [...this.championsData];
+    }
+
     render() {
         const content = document.getElementById("content");
         content.innerHTML = `
@@ -32,12 +55,10 @@ class Champions {
             <ul id="champions-list"></ul>
             <div id="pagination"></div>
         `;
-
-        this.renderList(this.getPaginatedData()); // Afficher les champions en fonction de la page actuelle
-        this.renderPagination(); // Afficher la pagination
+        this.renderList(this.getPaginatedData());
+        this.renderPagination();
     }
 
-    // Fonction pour afficher la liste des champions
     renderList(champions) {
         const list = document.getElementById("champions-list");
         list.innerHTML = "";
@@ -47,18 +68,26 @@ class Champions {
             div.className = "champion";
 
             div.innerHTML = `
-                <img class="champion-img lazy" 
-                     data-id="${champion.id}" 
-                     src="https://via.placeholder.com/150x150?text=Loading" 
-                     alt="${champion.name}" 
-                     loading="lazy" />
+                <input type="checkbox" id="fav-${champion.id}" ${champion.favorite ? "checked" : ""} />
+                <label for="fav-${champion.id}">★</label>
+                <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg" alt="${champion.name}">
                 <h2>${champion.name}</h2>
                 <p>${champion.title}</p>
             `;
-            div.addEventListener("click", () => {
-                history.pushState({}, "", `/champion/${champion.id}`);
-                afficherChampionDetails(champion.id);
+
+            // Ajouter l'événement pour mettre à jour le favori
+            div.querySelector("input").addEventListener("change", () => {
+                this.toggleFavorite(champion.id);
             });
+
+            // Ajouter l'événement pour la navigation vers la page de détails du champion
+            div.addEventListener("click", (e) => {
+                if (e.target.tagName !== "INPUT" && e.target.tagName !== "LABEL") {
+                    history.pushState({}, "", `/champion/${champion.id}`);
+                    afficherChampionDetails(champion.id);
+                }
+            });
+
             list.appendChild(div);
         });
 
@@ -100,11 +129,15 @@ class Champions {
         images.forEach(image => observer.observe(image));
     }
 
-    // La pagination
+    getPaginatedData() {
+        const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+        const endIndex = startIndex + this.itemsPerPage;
+        return this.filteredChampions.slice(startIndex, endIndex);
+    }
+
     renderPagination() {
         const pagination = document.getElementById("pagination");
         const totalPages = Math.ceil(this.filteredChampions.length / this.itemsPerPage);
-
         let paginationHTML = `
             <button ${this.currentPage === 1 ? 'disabled' : ''} id="prev-page">Précédent</button>
             <span>Page ${this.currentPage} sur ${totalPages}</span>
@@ -113,7 +146,6 @@ class Champions {
 
         pagination.innerHTML = paginationHTML;
 
-        // Boutons pour changer de page
         document.getElementById("prev-page").addEventListener("click", () => {
             if (this.currentPage > 1) {
                 this.currentPage--;
@@ -128,32 +160,6 @@ class Champions {
                 this.renderList(this.getPaginatedData());
                 this.renderPagination();
             }
-        });
-    }
-
-    // Fonction pour obtenir les champions pour la page actuelle
-    getPaginatedData() {
-        const startIndex = (this.currentPage - 1) * this.itemsPerPage;
-        const endIndex = startIndex + this.itemsPerPage;
-        return this.filteredChampions.slice(startIndex, endIndex);  // Paginer les champions filtrés
-    }
-
-    // Fonction pour ajouter le listener de recherche
-    addSearchListener() {
-        const searchInput = document.getElementById("search-champions");
-        searchInput.addEventListener("input", () => {
-            const searchTerm = searchInput.value.toLowerCase();
-
-            // Filtrer par nom ou titre
-            this.filteredChampions = this.championsData.filter(champion => 
-                champion.name.toLowerCase().includes(searchTerm) || 
-                champion.title.toLowerCase().includes(searchTerm)
-            );
-            this.currentPage = 1;
-
-            // Affichage avec pagination et filtre
-            this.renderList(this.getPaginatedData());
-            this.renderPagination();
         });
     }
 }
